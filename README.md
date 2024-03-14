@@ -2,14 +2,9 @@
 
 ---
 
-:warning: **Shippo no longer actively maintains this library** <br>
-However, you can use it as a starting point and update it for your needs and future changes to our APIs.<br>
-You can use our [Open API Specification](https://docs.goshippo.com/shippoapi/public-api/) to build your own library using tools like the [OpenAPI Generator](https://openapi-generator.tech/) and [Swagger Codegen](https://swagger.io/tools/swagger-codegen/).
+**This is  not maintained by Shippo.  Instead, this is a community maintained fork
+because for some reason Shippo decided to abandon their Python SDK**
 
----
-
-[![PyPI version](https://badge.fury.io/py/shippo.svg)](https://badge.fury.io/py/shippo)
-[![Build Status](https://travis-ci.org/goshippo/shippo-python-client.svg?branch=helper-merge-steveByerly-fork-2)](https://travis-ci.org/goshippo/shippo-python-client)
 
 Shippo is a shipping API that connects you with [multiple shipping carriers](https://goshippo.com/carriers/) (such as USPS, UPS, DHL, Canada Post, Australia Post, UberRUSH and many others) through one interface.
 
