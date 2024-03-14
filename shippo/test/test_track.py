@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -32,7 +32,7 @@ class TrackTests(ShippoTestCase):
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/track')
     def test_get_status(self):
-        carrier_token = 'usps'
+        carrier_token = 'shippo'
         tracking = shippo.Track.get_status(
             carrier_token, self.usps_tracking_no)
         self.assertTrue(tracking)
@@ -78,7 +78,7 @@ class TrackTests(ShippoTestCase):
             }
         )
         tracking = shippo.Track.create(
-            carrier='usps',
+            carrier='shippo',
             tracking_number='EXAMPLEOFINVALID123TRACKINGNUMBER',
             metadata='metadata'
         )
@@ -87,4 +87,4 @@ class TrackTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

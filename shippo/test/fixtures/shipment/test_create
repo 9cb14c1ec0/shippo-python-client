@@ -1,22 +1,30 @@
 interactions:
 - request:
-    body: !!python/unicode '{"city": "San Francisco", "name": "John Smith", "zip":
-      "94103", "street1": "965 Mission Street", "company": "Initech", "street_no":
-      "", "phone": "+1 630 333 7333", "state": "CA", "country": "US", "street2": "Ste
-      480", "metadata": "Customer ID 123456"}'
+    body: '{"city": "San Francisco", "name": "John Smith", "zip": "94103", "street1":
+      "965 Mission Street", "company": "Initech", "street_no": "", "phone": "+1 630
+      333 7333", "state": "CA", "country": "US", "street2": "Ste 480", "metadata":
+      "Customer ID 123456"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['251']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '251'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/addresses/
   response:
@@ -29,34 +37,53 @@ interactions:
         UjR0ofzqIjWmpFYY8uiEkdpLe9GJtGx2fxe/Rz2lpIJRfhlyNuhS62sbwdRbk/SUsopTznkdXqzA
         KPRwzQuXDMfSCgxqEamZhyHwEVCEY4qUOHu0IziyeyAs50VZxU4Ej7/HP/8AbNx2Fx8CAAA=
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['338']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:18 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 201, message: CREATED}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '338'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:18 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 201
+      message: CREATED
 - request:
-    body: !!python/unicode '{"city": "San Francisco", "name": "Laura Behrens Wu",
-      "zip": "94117", "street1": "Clayton St.", "company": "Shippo", "street_no":
-      "215", "phone": "+1 555 341 9393", "state": "CA", "country": "US", "street2":
-      "", "metadata": "Customer ID 123456"}'
+    body: '{"city": "San Francisco", "name": "Laura Behrens Wu", "zip": "94117", "street1":
+      "Clayton St.", "company": "Shippo", "street_no": "215", "phone": "+1 555 341
+      9393", "state": "CA", "country": "US", "street2": "", "metadata": "Customer
+      ID 123456"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['245']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/addresses/
   response:
@@ -69,33 +96,51 @@ interactions:
         a7y0K5M8O2Vq7evriBq/mW4eCB71QKDIGVteHhYMujH6viViaK0Z/VnGpJQiZ4UoBCnQK93d9uIN
         45l0Awa1ItaErot8D6jiGdW4GDzaHlzy8pQwLnK5oCSCx+vZz7+GFXlcGQIAAA==
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['331']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:19 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 201, message: CREATED}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '331'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:19 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 201
+      message: CREATED
 - request:
-    body: !!python/unicode '{"weight": "2", "distance_unit": "cm", "mass_unit": "lb",
-      "height": "5", "width": "5", "length": "5", "template": "", "metadata": "Customer
-      ID 123456"}'
+    body: '{"weight": "2", "distance_unit": "cm", "mass_unit": "lb", "height": "5",
+      "width": "5", "length": "5", "template": "", "metadata": "Customer ID 123456"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['151']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/parcels/
   response:
@@ -107,36 +152,55 @@ interactions:
         ABPrVtMArB/sMnbMn0FSaJxks0rnpdNCzX8RxJiF4G2QPgl30BChnLT3p28qdVqDpN93XYAl/kwk
         5PfOWCVAR8dDhHCa7fKwD76sDvblGhowCQ3zzYxX3t7nliY8Y7WD6y90WXrCwgEAAA==
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['277']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:19 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 201, message: CREATED}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '277'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:19 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 201
+      message: CREATED
 - request:
-    body: !!python/unicode '{"address_from": "be4e1533d7b242bb82852e6496f3af55", "insurance_currency":
+    body: '{"address_from": "be4e1533d7b242bb82852e6496f3af55", "insurance_currency":
       "USD", "extra": {"signature_confirmation": true, "reference_1": "", "insurance":
       {"currency": "USD", "amount": "200"}, "reference_2": ""}, "insurance_amount":
       "200", "address_to": "9c01975568f045e2b5d984dda4c3d360", "shipment_date": "2017-03-31T17:37:59.817Z",
       "async": false, "submission_type": "PICKUP", "parcels": ["fe87191e389342c38662bea9680af4a2"],
       "metadata": "Customer ID 123456"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['463']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '463'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/shipments/
   response:
@@ -190,14 +254,1081 @@ interactions:
         bOwV/DRDqyMFKhNiRt6MAZc9NMET4g4dmnqdOlJ1LnTz/tWkneHvpiOuW/73wlqQLc31ute7nH9J
         yP8BE65M9IZLAAA=
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['2633']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:23 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 201, message: CREATED}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '2633'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:23 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 201
+      message: CREATED
+- request:
+    body: '{"name": "John Smith", "company": "Initech", "street1": "965 Mission Street",
+      "street_no": "", "street2": "Ste 480", "city": "San Francisco", "state": "CA",
+      "zip": "94103", "country": "US", "phone": "+1 630 333 7333", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '251'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:15:50.196Z","object_updated":"2024-03-14T19:15:50.206Z","object_id":"b918d46f57ae4c4693aa7bffd38612d8","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"John
+        Smith","company":"Initech","street_no":"","street1":"965 Mission Street","street2":"Ste
+        480","street3":"","city":"San Francisco","state":"CA","zip":"94103","country":"US","longitude":null,"latitude":null,"phone":"0016303337333","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '352'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:50 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=543dbc9a634d4e8fa5d3461fb9ffb516; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '43'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "Laura Behrens Wu", "company": "Shippo", "street1": "Clayton St.",
+      "street_no": "215", "street2": "", "city": "San Francisco", "state": "CA", "zip":
+      "94117", "country": "US", "phone": "+1 555 341 9393", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:15:50.886Z","object_updated":"2024-03-14T19:15:50.897Z","object_id":"c735047e103c46e6a3d81a4d89584163","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '347'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:50 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=8fb74de5c80f4c4cba37de5fc198cef6; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '52'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"length": "5", "width": "5", "height": "5", "distance_unit": "cm", "weight":
+      "2", "mass_unit": "lb", "template": "", "metadata": "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"object_state":"VALID","object_created":"2024-03-14T19:15:51.579Z","object_updated":"2024-03-14T19:15:51.579Z","object_id":"eb29972467a04163adb37657f349a4e1","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:51 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=ef72486dc2484d4c81305cd37c2d7cd6; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '36'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"address_from": "c735047e103c46e6a3d81a4d89584163", "address_to": "b918d46f57ae4c4693aa7bffd38612d8",
+      "parcels": ["eb29972467a04163adb37657f349a4e1"], "submission_type": "PICKUP",
+      "insurance_amount": "200", "insurance_currency": "USD", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "metadata": "Customer ID 123456", "async": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '418'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: "{\"object_id\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"object_created\":\"2024-03-14T19:15:52.276Z\",\"object_updated\":\"2024-03-14T19:15:53.816Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"test\":true,\"metadata\":\"Customer
+        ID 123456\",\"messages\":[{\"source\":\"UPS\",\"code\":\"\",\"text\":\"Shipment
+        origin is out of service area for UPS Master account from CA\"},{\"source\":\"ShippoCommon\",\"code\":\"carrier_request_failed\",\"text\":\"Request
+        failed. Please try again or contact Shippo support at support@shippo.com.\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account FASTWAY_SHIPPO_TIER_1 doesn't support one or more shipment options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_sendle_account doesn't support one or more shipment options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account COURIERSPLEASE_SHIPPO_TIER_1 doesn't support one or more shipment
+        options\"},{\"source\":\"DHLExpress\",\"code\":\"\",\"text\":\"Shippo's DHL
+        Express master account doesn't support shipments to inside of the US\"},{\"source\":\"UPS\",\"code\":\"110971\",\"text\":\"RatedShipmentAlert:
+        Your invoice may vary from the displayed reference rates\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_canada_post_master doesn't support one or more shipment options\"},{\"source\":\"UPS\",\"code\":\"111150\",\"text\":\"Hard:
+        The Delivery Confirmation option is unavailable with the selected service.\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_deutsche_post_account doesn't support one or more shipment
+        options\"}],\"extra\":{\"insurance\":{\"amount\":\"200.00\",\"currency\":\"USD\"},\"reference_1\":\"\",\"reference_2\":\"\",\"signature_confirmation\":true},\"order\":null,\"carrier_accounts\":[],\"address_from\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"c735047e103c46e6a3d81a4d89584163\",\"is_complete\":true,\"validation_results\":{}},\"address_to\":{\"name\":\"John
+        Smith\",\"street1\":\"965 Mission Street\",\"street2\":\"Ste 480\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94103\",\"country\":\"US\",\"street_no\":\"\",\"phone\":\"0016303337333\",\"email\":\"\",\"company\":\"Initech\",\"is_residential\":null,\"test\":true,\"object_id\":\"b918d46f57ae4c4693aa7bffd38612d8\",\"is_complete\":true,\"validation_results\":{}},\"parcels\":[{\"object_owner\":\"903262028344@sendmeemail.xyz\",\"object_state\":\"VALID\",\"mass_unit\":\"lb\",\"template\":null,\"extra\":{},\"metadata\":\"Customer
+        ID 123456\",\"test\":true,\"object_id\":\"071f7926c64045dc9f0249d014882e3f\",\"object_created\":\"2024-03-14T19:15:52.276Z\",\"object_updated\":\"2024-03-14T19:15:52.276Z\",\"length\":\"5.0000\",\"width\":\"5.0000\",\"height\":\"5.0000\",\"distance_unit\":\"cm\",\"weight\":\"2.0000\",\"line_items\":[]}],\"status\":\"SUCCESS\",\"shipment_date\":\"2024-03-14T19:15:52.276Z\",\"address_return\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"c735047e103c46e6a3d81a4d89584163\",\"is_complete\":true,\"validation_results\":{}},\"rates\":[{\"object_id\":\"2332806afe434c64811e1e20924dd8d3\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"33.15\",\"currency\":\"USD\",\"amount_local\":\"33.15\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Overnight
+        delivery to most U.S. locations.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail Express\",\"token\":\"usps_priority_express\",\"terms\":\"\",\"extended_token\":\"usps_priority_express\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"3755bbd1609f4348b38bdfae50f37e15\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"13.55\",\"currency\":\"USD\",\"amount_local\":\"13.55\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Delivery
+        on the second business day by 10:30 a.m. or 12:00 noon to most commercial
+        destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE A.M.\",\"token\":\"ups_second_day_air_am\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air_am\",\"display_name\":\"UPS
+        2nd Day Air\xAE A.M.\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"3f652f9d463b4fa78e1014d3dfb4c1ea\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"12.40\",\"currency\":\"USD\",\"amount_local\":\"12.40\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the second business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE\",\"token\":\"ups_second_day_air\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air\",\"display_name\":\"UPS
+        2nd Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"598a72734dfc4fa197638a91896dddca\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"12.65\",\"currency\":\"USD\",\"amount_local\":\"12.65\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        within 1, 2,\_or 3 days\_based on where your package started and where it\u2019s
+        being sent.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail\",\"token\":\"usps_priority\",\"terms\":\"\",\"extended_token\":\"usps_priority\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"944a789665ca401494dfccc11465f754\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"22.00\",\"currency\":\"USD\",\"amount_local\":\"22.00\",\"currency_local\":\"USD\",\"attributes\":[\"FASTEST\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Next
+        business day delivery by 10:30 a.m., 12:00 noon, or end of day, depending
+        on destination.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air\xAE\",\"token\":\"ups_next_day_air\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air\",\"display_name\":\"UPS
+        Next Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"a2e5823506124fc9ab308453e63ef019\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"17.01\",\"currency\":\"USD\",\"amount_local\":\"17.01\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"15:00:00\",\"duration_terms\":\"Next
+        business day delivery by 3:00 or 4:30 p.m. for commercial destinations and
+        by end of day for residentail destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air Saver\xAE\",\"token\":\"ups_next_day_air_saver\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air_saver\",\"display_name\":\"UPS
+        Next Day Air Saver\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"bd8b617da54645e196369093bbee1f29\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"11.94\",\"currency\":\"USD\",\"amount_local\":\"11.94\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the third business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"3
+        Day Select\xAE\",\"token\":\"ups_3_day_select\",\"terms\":\"\",\"extended_token\":\"ups_3_day_select\",\"display_name\":\"UPS
+        3 Day Select\xAE\",\"parent_servicelevel\":null},\"estimated_days\":3,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"c1c9f38a964549d6b826d433cbf4dd92\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"9.10\",\"currency\":\"USD\",\"amount_local\":\"9.10\",\"currency_local\":\"USD\",\"attributes\":[\"CHEAPEST\",\"BESTVALUE\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        times vary. Delivered usually in 1-5 business days.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Ground\",\"token\":\"ups_ground\",\"terms\":\"\",\"extended_token\":\"ups_ground\",\"display_name\":\"UPS\xAE
+        Ground\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"ec4b79d4878d4f9394ece5b9c23446c4\",\"object_created\":\"2024-03-14T19:15:53.787Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"d5ac6bfdfe8846449e661bb5df3becc9\",\"amount\":\"11.52\",\"currency\":\"USD\",\"amount_local\":\"11.52\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        in 2 to 5 days.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Ground
+        Advantage\",\"token\":\"usps_ground_advantage\",\"terms\":\"\",\"extended_token\":\"usps_ground_advantage\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"}],\"alternate_address_to\":null,\"customs_declaration\":null}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:15:53 GMT
+      Transfer-Encoding:
+      - chunked
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '1576'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "John Smith", "company": "Initech", "street1": "965 Mission Street",
+      "street_no": "", "street2": "Ste 480", "city": "San Francisco", "state": "CA",
+      "zip": "94103", "country": "US", "phone": "+1 630 333 7333", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '251'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:24:38.643Z","object_updated":"2024-03-14T19:24:38.649Z","object_id":"a80d5579178f40ab940e98543a32e897","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"John
+        Smith","company":"Initech","street_no":"","street1":"965 Mission Street","street2":"Ste
+        480","street3":"","city":"San Francisco","state":"CA","zip":"94103","country":"US","longitude":null,"latitude":null,"phone":"0016303337333","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '350'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:38 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=4543d6f0dbc54f54a6c8d0cea52772e4; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '37'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "Laura Behrens Wu", "company": "Shippo", "street1": "Clayton St.",
+      "street_no": "215", "street2": "", "city": "San Francisco", "state": "CA", "zip":
+      "94117", "country": "US", "phone": "+1 555 341 9393", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:24:39.362Z","object_updated":"2024-03-14T19:24:39.366Z","object_id":"3cdcf1cc86f146c2af3156f21d8552f1","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '347'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:39 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=a3f5acc35fc74aaabf7c1ca74ab54925; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '30'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"length": "5", "width": "5", "height": "5", "distance_unit": "cm", "weight":
+      "2", "mass_unit": "lb", "template": "", "metadata": "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"object_state":"VALID","object_created":"2024-03-14T19:24:40.048Z","object_updated":"2024-03-14T19:24:40.048Z","object_id":"20fcd425c74f4e26b52b5dff4e111b61","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:40 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=a18ee9b60c104239a641c082dacf9ce3; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '41'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"address_from": "3cdcf1cc86f146c2af3156f21d8552f1", "address_to": "a80d5579178f40ab940e98543a32e897",
+      "parcels": ["20fcd425c74f4e26b52b5dff4e111b61"], "submission_type": "PICKUP",
+      "insurance_amount": "200", "insurance_currency": "USD", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "metadata": "Customer ID 123456", "async": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '418'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: "{\"object_id\":\"846a263ea4dc4d1f83011fa32db541c8\",\"object_created\":\"2024-03-14T19:24:40.744Z\",\"object_updated\":\"2024-03-14T19:24:42.075Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"test\":true,\"metadata\":\"Customer
+        ID 123456\",\"messages\":[{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account FASTWAY_SHIPPO_TIER_1 doesn't support one or more shipment options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_deutsche_post_account doesn't support one or more shipment
+        options\"},{\"source\":\"ShippoCommon\",\"code\":\"carrier_request_failed\",\"text\":\"Request
+        failed. Please try again or contact Shippo support at support@shippo.com.\"},{\"source\":\"UPS\",\"code\":\"110971\",\"text\":\"RatedShipmentAlert:
+        Your invoice may vary from the displayed reference rates\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_canada_post_master doesn't support one or more shipment options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_sendle_account doesn't support one or more shipment options\"},{\"source\":\"DHLExpress\",\"code\":\"\",\"text\":\"Shippo's
+        DHL Express master account doesn't support shipments to inside of the US\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account COURIERSPLEASE_SHIPPO_TIER_1 doesn't support one or more shipment
+        options\"},{\"source\":\"UPS\",\"code\":\"111150\",\"text\":\"Hard: The Delivery
+        Confirmation option is unavailable with the selected service.\"},{\"source\":\"UPS\",\"code\":\"\",\"text\":\"Shipment
+        origin is out of service area for UPS Master account from CA\"}],\"extra\":{\"insurance\":{\"amount\":\"200.00\",\"currency\":\"USD\"},\"reference_1\":\"\",\"reference_2\":\"\",\"signature_confirmation\":true},\"order\":null,\"carrier_accounts\":[],\"address_from\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"3cdcf1cc86f146c2af3156f21d8552f1\",\"is_complete\":true,\"validation_results\":{}},\"address_to\":{\"name\":\"John
+        Smith\",\"street1\":\"965 Mission Street\",\"street2\":\"Ste 480\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94103\",\"country\":\"US\",\"street_no\":\"\",\"phone\":\"0016303337333\",\"email\":\"\",\"company\":\"Initech\",\"is_residential\":null,\"test\":true,\"object_id\":\"a80d5579178f40ab940e98543a32e897\",\"is_complete\":true,\"validation_results\":{}},\"parcels\":[{\"object_owner\":\"903262028344@sendmeemail.xyz\",\"object_state\":\"VALID\",\"mass_unit\":\"lb\",\"template\":null,\"extra\":{},\"metadata\":\"Customer
+        ID 123456\",\"test\":true,\"object_id\":\"265488e1898c4b119a7e322f939e68d8\",\"object_created\":\"2024-03-14T19:24:40.744Z\",\"object_updated\":\"2024-03-14T19:24:40.744Z\",\"length\":\"5.0000\",\"width\":\"5.0000\",\"height\":\"5.0000\",\"distance_unit\":\"cm\",\"weight\":\"2.0000\",\"line_items\":[]}],\"status\":\"SUCCESS\",\"shipment_date\":\"2024-03-14T19:24:40.744Z\",\"address_return\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"3cdcf1cc86f146c2af3156f21d8552f1\",\"is_complete\":true,\"validation_results\":{}},\"rates\":[{\"object_id\":\"11b190e982f04ce494ce4908b4f6e6ed\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"22.00\",\"currency\":\"USD\",\"amount_local\":\"22.00\",\"currency_local\":\"USD\",\"attributes\":[\"FASTEST\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Next
+        business day delivery by 10:30 a.m., 12:00 noon, or end of day, depending
+        on destination.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air\xAE\",\"token\":\"ups_next_day_air\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air\",\"display_name\":\"UPS
+        Next Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"848cdc5e2ef942e198f812889c21a1f6\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"33.15\",\"currency\":\"USD\",\"amount_local\":\"33.15\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Overnight
+        delivery to most U.S. locations.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail Express\",\"token\":\"usps_priority_express\",\"terms\":\"\",\"extended_token\":\"usps_priority_express\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"a3f19e024d184162ae71687cdf03d2e3\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"11.52\",\"currency\":\"USD\",\"amount_local\":\"11.52\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        in 2 to 5 days.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Ground
+        Advantage\",\"token\":\"usps_ground_advantage\",\"terms\":\"\",\"extended_token\":\"usps_ground_advantage\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"a4b5e7a100534c5b9dd18d8b35780a9e\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"11.94\",\"currency\":\"USD\",\"amount_local\":\"11.94\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the third business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"3
+        Day Select\xAE\",\"token\":\"ups_3_day_select\",\"terms\":\"\",\"extended_token\":\"ups_3_day_select\",\"display_name\":\"UPS
+        3 Day Select\xAE\",\"parent_servicelevel\":null},\"estimated_days\":3,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"b5c29938182e4899886f40b63bfce28c\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"12.40\",\"currency\":\"USD\",\"amount_local\":\"12.40\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the second business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE\",\"token\":\"ups_second_day_air\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air\",\"display_name\":\"UPS
+        2nd Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"beead93f7d084dcba08cc24673ae93dd\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"12.65\",\"currency\":\"USD\",\"amount_local\":\"12.65\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        within 1, 2,\_or 3 days\_based on where your package started and where it\u2019s
+        being sent.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail\",\"token\":\"usps_priority\",\"terms\":\"\",\"extended_token\":\"usps_priority\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"d0b5e739b88741fab41b3fef6260e6fa\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"13.55\",\"currency\":\"USD\",\"amount_local\":\"13.55\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Delivery
+        on the second business day by 10:30 a.m. or 12:00 noon to most commercial
+        destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE A.M.\",\"token\":\"ups_second_day_air_am\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air_am\",\"display_name\":\"UPS
+        2nd Day Air\xAE A.M.\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"eba30fe1f6e1442eab9e08bb8b184d7c\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"9.10\",\"currency\":\"USD\",\"amount_local\":\"9.10\",\"currency_local\":\"USD\",\"attributes\":[\"CHEAPEST\",\"BESTVALUE\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        times vary. Delivered usually in 1-5 business days.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Ground\",\"token\":\"ups_ground\",\"terms\":\"\",\"extended_token\":\"ups_ground\",\"display_name\":\"UPS\xAE
+        Ground\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"f077106143c447abb466fe256be1135d\",\"object_created\":\"2024-03-14T19:24:42.051Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"846a263ea4dc4d1f83011fa32db541c8\",\"amount\":\"17.01\",\"currency\":\"USD\",\"amount_local\":\"17.01\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"15:00:00\",\"duration_terms\":\"Next
+        business day delivery by 3:00 or 4:30 p.m. for commercial destinations and
+        by end of day for residentail destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air Saver\xAE\",\"token\":\"ups_next_day_air_saver\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air_saver\",\"display_name\":\"UPS
+        Next Day Air Saver\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"}],\"alternate_address_to\":null,\"customs_declaration\":null}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:24:42 GMT
+      Transfer-Encoding:
+      - chunked
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '1370'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "John Smith", "company": "Initech", "street1": "965 Mission Street",
+      "street_no": "", "street2": "Ste 480", "city": "San Francisco", "state": "CA",
+      "zip": "94103", "country": "US", "phone": "+1 630 333 7333", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '251'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:31:43.838Z","object_updated":"2024-03-14T19:31:43.844Z","object_id":"63e066de458d41d59d2e7691ef20bebc","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"John
+        Smith","company":"Initech","street_no":"","street1":"965 Mission Street","street2":"Ste
+        480","street3":"","city":"San Francisco","state":"CA","zip":"94103","country":"US","longitude":null,"latitude":null,"phone":"0016303337333","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:43 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=b23f41d1e1b645efb73f780308e80819; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '38'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "Laura Behrens Wu", "company": "Shippo", "street1": "Clayton St.",
+      "street_no": "215", "street2": "", "city": "San Francisco", "state": "CA", "zip":
+      "94117", "country": "US", "phone": "+1 555 341 9393", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:31:44.530Z","object_updated":"2024-03-14T19:31:44.538Z","object_id":"fcdba2e6724649ec82b563cee0faafc8","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '347'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:44 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=6da255029ac541d1947182ca5a2c0328; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '46'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"length": "5", "width": "5", "height": "5", "distance_unit": "cm", "weight":
+      "2", "mass_unit": "lb", "template": "", "metadata": "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"object_state":"VALID","object_created":"2024-03-14T19:31:45.212Z","object_updated":"2024-03-14T19:31:45.212Z","object_id":"04b646d161b641d689b3d6ab2a678dee","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:45 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=2f896e2f25e840ff89d8c16808af05de; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '27'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"address_from": "fcdba2e6724649ec82b563cee0faafc8", "address_to": "63e066de458d41d59d2e7691ef20bebc",
+      "parcels": ["04b646d161b641d689b3d6ab2a678dee"], "submission_type": "PICKUP",
+      "insurance_amount": "200", "insurance_currency": "USD", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "metadata": "Customer ID 123456", "async": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '418'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: "{\"object_id\":\"6599fb42fb734123be4cb0814252facf\",\"object_created\":\"2024-03-14T19:31:45.886Z\",\"object_updated\":\"2024-03-14T19:31:47.276Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"test\":true,\"metadata\":\"Customer
+        ID 123456\",\"messages\":[{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account FASTWAY_SHIPPO_TIER_1 doesn't support one or more shipment options\"},{\"source\":\"UPS\",\"code\":\"111150\",\"text\":\"Hard:
+        The Delivery Confirmation option is unavailable with the selected service.\"},{\"source\":\"DHLExpress\",\"code\":\"\",\"text\":\"Shippo's
+        DHL Express master account doesn't support shipments to inside of the US\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account COURIERSPLEASE_SHIPPO_TIER_1 doesn't support one or more shipment
+        options\"},{\"source\":\"UPS\",\"code\":\"\",\"text\":\"Shipment origin is
+        out of service area for UPS Master account from CA\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_canada_post_master doesn't support one or more shipment options\"},{\"source\":\"UPS\",\"code\":\"110971\",\"text\":\"RatedShipmentAlert:
+        Your invoice may vary from the displayed reference rates\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_sendle_account doesn't support one or more shipment options\"},{\"source\":\"ShippoCommon\",\"code\":\"carrier_request_failed\",\"text\":\"Request
+        failed. Please try again or contact Shippo support at support@shippo.com.\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_deutsche_post_account doesn't support one or more shipment
+        options\"}],\"extra\":{\"insurance\":{\"amount\":\"200.00\",\"currency\":\"USD\"},\"reference_1\":\"\",\"reference_2\":\"\",\"signature_confirmation\":true},\"order\":null,\"carrier_accounts\":[],\"address_from\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"fcdba2e6724649ec82b563cee0faafc8\",\"is_complete\":true,\"validation_results\":{}},\"address_to\":{\"name\":\"John
+        Smith\",\"street1\":\"965 Mission Street\",\"street2\":\"Ste 480\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94103\",\"country\":\"US\",\"street_no\":\"\",\"phone\":\"0016303337333\",\"email\":\"\",\"company\":\"Initech\",\"is_residential\":null,\"test\":true,\"object_id\":\"63e066de458d41d59d2e7691ef20bebc\",\"is_complete\":true,\"validation_results\":{}},\"parcels\":[{\"object_owner\":\"903262028344@sendmeemail.xyz\",\"object_state\":\"VALID\",\"mass_unit\":\"lb\",\"template\":null,\"extra\":{},\"metadata\":\"Customer
+        ID 123456\",\"test\":true,\"object_id\":\"75f6b507daa84297904858ad0e180ad4\",\"object_created\":\"2024-03-14T19:31:45.886Z\",\"object_updated\":\"2024-03-14T19:31:45.886Z\",\"length\":\"5.0000\",\"width\":\"5.0000\",\"height\":\"5.0000\",\"distance_unit\":\"cm\",\"weight\":\"2.0000\",\"line_items\":[]}],\"status\":\"SUCCESS\",\"shipment_date\":\"2024-03-14T19:31:45.886Z\",\"address_return\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"fcdba2e6724649ec82b563cee0faafc8\",\"is_complete\":true,\"validation_results\":{}},\"rates\":[{\"object_id\":\"06e39450a2eb4e4fa49887d8c7a67785\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"11.52\",\"currency\":\"USD\",\"amount_local\":\"11.52\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        in 2 to 5 days.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Ground
+        Advantage\",\"token\":\"usps_ground_advantage\",\"terms\":\"\",\"extended_token\":\"usps_ground_advantage\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"2b23ccfca110436b8a097a382347a664\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"12.65\",\"currency\":\"USD\",\"amount_local\":\"12.65\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        within 1, 2,\_or 3 days\_based on where your package started and where it\u2019s
+        being sent.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail\",\"token\":\"usps_priority\",\"terms\":\"\",\"extended_token\":\"usps_priority\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"32272ceb705a4f18801790f574e9c6b6\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"12.40\",\"currency\":\"USD\",\"amount_local\":\"12.40\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the second business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE\",\"token\":\"ups_second_day_air\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air\",\"display_name\":\"UPS
+        2nd Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"5c642aa8bfc84918825984dfde965d1b\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"22.00\",\"currency\":\"USD\",\"amount_local\":\"22.00\",\"currency_local\":\"USD\",\"attributes\":[\"FASTEST\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Next
+        business day delivery by 10:30 a.m., 12:00 noon, or end of day, depending
+        on destination.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air\xAE\",\"token\":\"ups_next_day_air\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air\",\"display_name\":\"UPS
+        Next Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"753018fa5fc844faa0f8139f8c84163d\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"13.55\",\"currency\":\"USD\",\"amount_local\":\"13.55\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Delivery
+        on the second business day by 10:30 a.m. or 12:00 noon to most commercial
+        destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE A.M.\",\"token\":\"ups_second_day_air_am\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air_am\",\"display_name\":\"UPS
+        2nd Day Air\xAE A.M.\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"786f590d579741ad9cce682f3485ec76\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"33.15\",\"currency\":\"USD\",\"amount_local\":\"33.15\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Overnight
+        delivery to most U.S. locations.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail Express\",\"token\":\"usps_priority_express\",\"terms\":\"\",\"extended_token\":\"usps_priority_express\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"b719ac3126154f0f9edecd5726861f7d\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"9.10\",\"currency\":\"USD\",\"amount_local\":\"9.10\",\"currency_local\":\"USD\",\"attributes\":[\"CHEAPEST\",\"BESTVALUE\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        times vary. Delivered usually in 1-5 business days.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Ground\",\"token\":\"ups_ground\",\"terms\":\"\",\"extended_token\":\"ups_ground\",\"display_name\":\"UPS\xAE
+        Ground\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"bb7b0888ff084971a12583b7023d3048\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"17.01\",\"currency\":\"USD\",\"amount_local\":\"17.01\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"15:00:00\",\"duration_terms\":\"Next
+        business day delivery by 3:00 or 4:30 p.m. for commercial destinations and
+        by end of day for residentail destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air Saver\xAE\",\"token\":\"ups_next_day_air_saver\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air_saver\",\"display_name\":\"UPS
+        Next Day Air Saver\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"c0907796fbe3477787ae17f4bc7216be\",\"object_created\":\"2024-03-14T19:31:47.255Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"6599fb42fb734123be4cb0814252facf\",\"amount\":\"11.94\",\"currency\":\"USD\",\"amount_local\":\"11.94\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the third business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"3
+        Day Select\xAE\",\"token\":\"ups_3_day_select\",\"terms\":\"\",\"extended_token\":\"ups_3_day_select\",\"display_name\":\"UPS
+        3 Day Select\xAE\",\"parent_servicelevel\":null},\"estimated_days\":3,\"included_insurance_price\":\"2.50\"}],\"alternate_address_to\":null,\"customs_declaration\":null}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:31:47 GMT
+      Transfer-Encoding:
+      - chunked
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '1425'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "John Smith", "company": "Initech", "street1": "965 Mission Street",
+      "street_no": "", "street2": "Ste 480", "city": "San Francisco", "state": "CA",
+      "zip": "94103", "country": "US", "phone": "+1 630 333 7333", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '251'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:35:16.288Z","object_updated":"2024-03-14T19:35:16.298Z","object_id":"ddd35d3672c54c279a40acc4b21b0c01","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"John
+        Smith","company":"Initech","street_no":"","street1":"965 Mission Street","street2":"Ste
+        480","street3":"","city":"San Francisco","state":"CA","zip":"94103","country":"US","longitude":null,"latitude":null,"phone":"0016303337333","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '350'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:35:16 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=9c9df1f6aba447ab8adba7a27b9bc003; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '38'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"name": "Laura Behrens Wu", "company": "Shippo", "street1": "Clayton St.",
+      "street_no": "215", "street2": "", "city": "San Francisco", "state": "CA", "zip":
+      "94117", "country": "US", "phone": "+1 555 341 9393", "metadata": "Customer
+      ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"object_created":"2024-03-14T19:35:16.978Z","object_updated":"2024-03-14T19:35:16.983Z","object_id":"7ebea9ab048b438cb0fa297c63d2a5cc","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '348'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:35:16 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=80103db436b64e5dbba6b31cf7a249f1; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '36'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"length": "5", "width": "5", "height": "5", "distance_unit": "cm", "weight":
+      "2", "mass_unit": "lb", "template": "", "metadata": "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"object_state":"VALID","object_created":"2024-03-14T19:35:17.707Z","object_updated":"2024-03-14T19:35:17.707Z","object_id":"b0da02d128dd403cbe4e27849a55c6b7","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '279'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:35:17 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=f4d2a6765ce44b90a50d761267d65dab; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '25'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"address_from": "7ebea9ab048b438cb0fa297c63d2a5cc", "address_to": "ddd35d3672c54c279a40acc4b21b0c01",
+      "parcels": ["b0da02d128dd403cbe4e27849a55c6b7"], "submission_type": "PICKUP",
+      "insurance_amount": "200", "insurance_currency": "USD", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "metadata": "Customer ID 123456", "async": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '418'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: "{\"object_id\":\"9408c7100220486fa02c32d2de4d1951\",\"object_created\":\"2024-03-14T19:35:18.377Z\",\"object_updated\":\"2024-03-14T19:35:19.815Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"test\":true,\"metadata\":\"Customer
+        ID 123456\",\"messages\":[{\"source\":\"ShippoCommon\",\"code\":\"carrier_request_failed\",\"text\":\"Request
+        failed. Please try again or contact Shippo support at support@shippo.com.\"},{\"source\":\"DHLExpress\",\"code\":\"\",\"text\":\"Shippo's
+        DHL Express master account doesn't support shipments to inside of the US\"},{\"source\":\"UPS\",\"code\":\"110971\",\"text\":\"RatedShipmentAlert:
+        Your invoice may vary from the displayed reference rates\"},{\"source\":\"UPS\",\"code\":\"\",\"text\":\"Shipment
+        origin is out of service area for UPS Master account from CA\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account COURIERSPLEASE_SHIPPO_TIER_1 doesn't support one or more shipment
+        options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier account
+        shippo_sendle_account doesn't support one or more shipment options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_deutsche_post_account doesn't support one or more shipment
+        options\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier account
+        FASTWAY_SHIPPO_TIER_1 doesn't support one or more shipment options\"},{\"source\":\"UPS\",\"code\":\"111150\",\"text\":\"Hard:
+        The Delivery Confirmation option is unavailable with the selected service.\"},{\"source\":\"Shippo\",\"code\":\"\",\"text\":\"Carrier
+        account shippo_canada_post_master doesn't support one or more shipment options\"}],\"extra\":{\"insurance\":{\"amount\":\"200.00\",\"currency\":\"USD\"},\"reference_1\":\"\",\"reference_2\":\"\",\"signature_confirmation\":true},\"order\":null,\"carrier_accounts\":[],\"address_from\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"7ebea9ab048b438cb0fa297c63d2a5cc\",\"is_complete\":true,\"validation_results\":{}},\"address_to\":{\"name\":\"John
+        Smith\",\"street1\":\"965 Mission Street\",\"street2\":\"Ste 480\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94103\",\"country\":\"US\",\"street_no\":\"\",\"phone\":\"0016303337333\",\"email\":\"\",\"company\":\"Initech\",\"is_residential\":null,\"test\":true,\"object_id\":\"ddd35d3672c54c279a40acc4b21b0c01\",\"is_complete\":true,\"validation_results\":{}},\"parcels\":[{\"object_owner\":\"903262028344@sendmeemail.xyz\",\"object_state\":\"VALID\",\"mass_unit\":\"lb\",\"template\":null,\"extra\":{},\"metadata\":\"Customer
+        ID 123456\",\"test\":true,\"object_id\":\"d6f0187b903d48e7bf074f85ff2dcb1d\",\"object_created\":\"2024-03-14T19:35:18.377Z\",\"object_updated\":\"2024-03-14T19:35:18.377Z\",\"length\":\"5.0000\",\"width\":\"5.0000\",\"height\":\"5.0000\",\"distance_unit\":\"cm\",\"weight\":\"2.0000\",\"line_items\":[]}],\"status\":\"SUCCESS\",\"shipment_date\":\"2024-03-14T19:35:18.376Z\",\"address_return\":{\"name\":\"Laura
+        Behrens Wu\",\"street1\":\"Clayton St.\",\"street2\":\"\",\"street3\":\"\",\"city\":\"San
+        Francisco\",\"state\":\"CA\",\"zip\":\"94117\",\"country\":\"US\",\"street_no\":\"215\",\"phone\":\"0015553419393\",\"email\":\"\",\"company\":\"Shippo\",\"is_residential\":null,\"test\":true,\"object_id\":\"7ebea9ab048b438cb0fa297c63d2a5cc\",\"is_complete\":true,\"validation_results\":{}},\"rates\":[{\"object_id\":\"4049471f544045fbb0730ebb792bc619\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"22.00\",\"currency\":\"USD\",\"amount_local\":\"22.00\",\"currency_local\":\"USD\",\"attributes\":[\"FASTEST\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Next
+        business day delivery by 10:30 a.m., 12:00 noon, or end of day, depending
+        on destination.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air\xAE\",\"token\":\"ups_next_day_air\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air\",\"display_name\":\"UPS
+        Next Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"4c604bff6dd4470d8a366fd6cc93d546\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"12.65\",\"currency\":\"USD\",\"amount_local\":\"12.65\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        within 1, 2,\_or 3 days\_based on where your package started and where it\u2019s
+        being sent.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail\",\"token\":\"usps_priority\",\"terms\":\"\",\"extended_token\":\"usps_priority\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"57ea37b64a3449509c785e3671141a03\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"17.01\",\"currency\":\"USD\",\"amount_local\":\"17.01\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"15:00:00\",\"duration_terms\":\"Next
+        business day delivery by 3:00 or 4:30 p.m. for commercial destinations and
+        by end of day for residentail destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Next
+        Day Air Saver\xAE\",\"token\":\"ups_next_day_air_saver\",\"terms\":\"\",\"extended_token\":\"ups_next_day_air_saver\",\"display_name\":\"UPS
+        Next Day Air Saver\xAE\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"61dbcc7eccbd42f5adc82ca10e356776\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"33.15\",\"currency\":\"USD\",\"amount_local\":\"33.15\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Overnight
+        delivery to most U.S. locations.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Priority
+        Mail Express\",\"token\":\"usps_priority_express\",\"terms\":\"\",\"extended_token\":\"usps_priority_express\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"729c4ad4ee304d1a876dae48d5a4ae62\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"9.10\",\"currency\":\"USD\",\"amount_local\":\"9.10\",\"currency_local\":\"USD\",\"attributes\":[\"CHEAPEST\",\"BESTVALUE\"],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        times vary. Delivered usually in 1-5 business days.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"Ground\",\"token\":\"ups_ground\",\"terms\":\"\",\"extended_token\":\"ups_ground\",\"display_name\":\"UPS\xAE
+        Ground\",\"parent_servicelevel\":null},\"estimated_days\":1,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"7682c93557e6493f9cd6e6fcdd45089d\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"13.55\",\"currency\":\"USD\",\"amount_local\":\"13.55\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":\"10:30:00\",\"duration_terms\":\"Delivery
+        on the second business day by 10:30 a.m. or 12:00 noon to most commercial
+        destinations.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE A.M.\",\"token\":\"ups_second_day_air_am\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air_am\",\"display_name\":\"UPS
+        2nd Day Air\xAE A.M.\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"80f6fcee1d8b4ea2a4f0b3883a236fcd\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"11.52\",\"currency\":\"USD\",\"amount_local\":\"11.52\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"USPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/USPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/USPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        in 2 to 5 days.\",\"messages\":[],\"carrier_account\":\"a20724d3827d493a805a637fc09e4357\",\"zone\":\"1\",\"test\":true,\"servicelevel\":{\"name\":\"Ground
+        Advantage\",\"token\":\"usps_ground_advantage\",\"terms\":\"\",\"extended_token\":\"usps_ground_advantage\",\"display_name\":null,\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"cc3425c2dd93404b9b2537de6c455005\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"12.40\",\"currency\":\"USD\",\"amount_local\":\"12.40\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the second business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"2nd
+        Day Air\xAE\",\"token\":\"ups_second_day_air\",\"terms\":\"\",\"extended_token\":\"ups_second_day_air\",\"display_name\":\"UPS
+        2nd Day Air\xAE\",\"parent_servicelevel\":null},\"estimated_days\":2,\"included_insurance_price\":\"2.50\"},{\"object_id\":\"e35d029f5ca843be981fce46ed4ac933\",\"object_created\":\"2024-03-14T19:35:19.793Z\",\"object_owner\":\"903262028344@sendmeemail.xyz\",\"shipment\":\"9408c7100220486fa02c32d2de4d1951\",\"amount\":\"11.94\",\"currency\":\"USD\",\"amount_local\":\"11.94\",\"currency_local\":\"USD\",\"attributes\":[],\"provider\":\"UPS\",\"provider_image_75\":\"https://shippo-static.s3.amazonaws.com/providers/75/UPS.png\",\"provider_image_200\":\"https://shippo-static.s3.amazonaws.com/providers/200/UPS.png\",\"arrives_by\":null,\"duration_terms\":\"Delivery
+        by the end of the third business day.\",\"messages\":[],\"carrier_account\":\"a9814a200caa4e66bdbfb7383a4cb90e\",\"zone\":null,\"test\":true,\"servicelevel\":{\"name\":\"3
+        Day Select\xAE\",\"token\":\"ups_3_day_select\",\"terms\":\"\",\"extended_token\":\"ups_3_day_select\",\"display_name\":\"UPS
+        3 Day Select\xAE\",\"parent_servicelevel\":null},\"estimated_days\":3,\"included_insurance_price\":\"2.50\"}],\"alternate_address_to\":null,\"customs_declaration\":null}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:35:19 GMT
+      Transfer-Encoding:
+      - chunked
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '1473'
+    status:
+      code: 201
+      message: Created
 version: 1

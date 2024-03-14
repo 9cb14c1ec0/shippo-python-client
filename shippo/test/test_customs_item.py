@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -46,7 +46,7 @@ class CustomsItemTest(ShippoTestCase):
     def test_retrieve(self):
         customs_item = shippo.CustomsItem.create(**DUMMY_CUSTOMS_ITEM)
         retrieve = shippo.CustomsItem.retrieve(customs_item.object_id)
-        self.assertItemsEqual(customs_item, retrieve)
+        self.assertEqual(customs_item, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/customs-item')
     def test_invalid_retrieve(self):
@@ -66,4 +66,4 @@ class CustomsItemTest(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

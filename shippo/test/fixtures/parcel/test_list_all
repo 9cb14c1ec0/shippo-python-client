@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/parcels/
   response:
@@ -28,14 +35,300 @@ interactions:
         jSOFtZxy0KAdMcpZZTgtMgbsxvXaXEGmGuilXEGlQtHnXIvwWSpbCE0I4USsLc0kR4Vrhk46J25c
         r8gVcqFzFrjS7AKuB3fgql84h8NPlDoGXBpJeZahEcgYLUCFQxgl4Teur+X6+PQbT6jpa50JAAA=
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['512']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:07 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '512'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:07 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:15:27.600Z","object_updated":"2024-03-14T19:15:27.600Z","object_id":"3ba2c61685fd4942ba38cafb5aab00ac","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:15.256Z","object_updated":"2024-03-14T19:15:15.256Z","object_id":"16049bd5e91248dca0629c976e2f4eb7","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:03.781Z","object_updated":"2024-03-14T19:15:03.781Z","object_id":"81380abfc7614dd9b54fed0b3f408011","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:14:19.738Z","object_updated":"2024-03-14T19:14:19.738Z","object_id":"c9dd5f423b7a45aab7b8ca8bbbedf242","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T16:17:24.564Z","object_updated":"2023-10-10T16:17:24.615Z","object_id":"f75648a809854278ba2a624bcd1e69a3","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T16:16:21.840Z","object_updated":"2023-10-10T16:16:21.886Z","object_id":"d32ffc1106044ee390e513b48254d571","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T15:45:05.482Z","object_updated":"2023-10-10T15:45:05.534Z","object_id":"da4c1154744b4412a4b77a2573a7644c","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T11:48:19.327Z","object_updated":"2023-10-10T11:48:19.355Z","object_id":"d31e83e472864c888467dbd63fce2089","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"8.0000","width":"8.0000","height":"7.0000","distance_unit":"in","weight":"3.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T11:48:05.826Z","object_updated":"2023-10-10T11:48:05.852Z","object_id":"f5fa3592095b407c819c468e2d3294d5","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"8.0000","width":"8.0000","height":"7.0000","distance_unit":"in","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:49:51.807Z","object_updated":"2023-10-10T09:49:51.842Z","object_id":"5a297ba8a58941139da483573e271e65","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:46:58.619Z","object_updated":"2023-10-10T09:46:58.660Z","object_id":"c0252468924b437798bf6c34367c8eef","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:45:56.337Z","object_updated":"2023-10-10T09:45:56.357Z","object_id":"2427d106bb2d4e50a840399736bb4c1e","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:41:55.726Z","object_updated":"2023-10-10T09:41:55.757Z","object_id":"7770e50898354eb28b36d86e5875b710","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-04T16:50:45.515Z","object_updated":"2023-10-04T16:50:45.586Z","object_id":"631e8e7ba564462e99339fae7e931add","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"21.0000","width":"21.0000","height":"7.0000","distance_unit":"in","weight":"22.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-26T20:06:28.515Z","object_updated":"2023-09-26T20:06:28.586Z","object_id":"75ba5cb088a24c1fb288affecb897222","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"9.0000","height":"7.0000","distance_unit":"in","weight":"12.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-26T20:05:15.159Z","object_updated":"2023-09-26T20:05:15.208Z","object_id":"eec27c5026f94c9886f0f488072370d2","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"9.0000","height":"7.0000","distance_unit":"in","weight":"12.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-26T19:48:20.854Z","object_updated":"2023-09-26T19:48:20.916Z","object_id":"8916a62134da44b8ae38a110ab5906d9","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"9.0000","height":"7.0000","distance_unit":"in","weight":"12.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-26T19:46:39.387Z","object_updated":"2023-09-26T19:46:39.429Z","object_id":"24a5cfad3a7946adb3aee565aada79bc","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"9.0000","height":"7.0000","distance_unit":"in","weight":"12.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-26T13:41:34.349Z","object_updated":"2023-09-26T13:41:34.388Z","object_id":"546645e87c4e405d96834e654a413856","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"9.0000","height":"7.0000","distance_unit":"in","weight":"12.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-18T12:21:31.196Z","object_updated":"2023-09-18T12:21:31.235Z","object_id":"a7d03e99ce1c47b39e3792be74d97b04","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"12.0000","width":"11.0000","height":"11.0000","distance_unit":"in","weight":"10.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-06T20:31:49.286Z","object_updated":"2023-09-06T20:31:49.321Z","object_id":"27005167bfab40aeaa3ca6fbead7b53a","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-09-06T20:23:38.262Z","object_updated":"2023-09-06T20:23:38.305Z","object_id":"b8ac850d727e4827a64c038c1ccbe478","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"4.0000","width":"4.0000","height":"4.0000","distance_unit":"in","weight":"4.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-08-21T17:57:50.763Z","object_updated":"2023-08-21T17:57:50.815Z","object_id":"04391f5c7cfa4d5692c0af24d83c16ce","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-07-13T19:26:44.165Z","object_updated":"2023-07-13T19:26:44.237Z","object_id":"91ee263a612240bb9d84cc841bf246d9","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"11.0000","width":"9.0000","height":"4.0000","distance_unit":"in","weight":"4.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-07-13T18:19:26.215Z","object_updated":"2023-07-13T18:19:26.285Z","object_id":"c4d695111b014d5193ea050cf9162d6d","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"10.0000","width":"7.0000","height":"3.0000","distance_unit":"in","weight":"3.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1395'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:31 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=7a749dc9b67c4c31ab2dc424c5217eb8; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '1639'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:24:19.163Z","object_updated":"2024-03-14T19:24:19.163Z","object_id":"38dc37798a494523ab12f29e0bdeb239","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:06.288Z","object_updated":"2024-03-14T19:24:06.288Z","object_id":"edd7072a4ae54e4ab425d18e033dff50","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:23:54.367Z","object_updated":"2024-03-14T19:23:54.367Z","object_id":"0533aeb4e2634b9fa34f3ef26d0719c6","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:23:16.339Z","object_updated":"2024-03-14T19:23:16.339Z","object_id":"1af64293164842edbff3c3c7ae9bcc0f","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:30.988Z","object_updated":"2024-03-14T19:16:30.988Z","object_id":"93d7d5c33d88487f9758e9f32bba8ddc","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:20.220Z","object_updated":"2024-03-14T19:16:20.220Z","object_id":"668f2e96e6ab445d9783eaf962fc033b","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:11.337Z","object_updated":"2024-03-14T19:16:11.337Z","object_id":"9c340ddf74a54f6fabf05c40b5df0747","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:02.103Z","object_updated":"2024-03-14T19:16:02.103Z","object_id":"d29eb461c832433a9f4379bb9dedcb39","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:55.905Z","object_updated":"2024-03-14T19:15:55.905Z","object_id":"84e65ae2916c4f44a2515887dac98ae1","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:51.579Z","object_updated":"2024-03-14T19:15:51.579Z","object_id":"eb29972467a04163adb37657f349a4e1","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:45.378Z","object_updated":"2024-03-14T19:15:45.378Z","object_id":"34a068e5053b4fd2827be1a7a5f77bcf","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:37.360Z","object_updated":"2024-03-14T19:15:37.360Z","object_id":"dc992eb67f274b19bd3fbc2fb7218521","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:34.301Z","object_updated":"2024-03-14T19:15:34.301Z","object_id":"343282e23a964676a42ddd1a66f57e35","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:27.600Z","object_updated":"2024-03-14T19:15:27.600Z","object_id":"3ba2c61685fd4942ba38cafb5aab00ac","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:15.256Z","object_updated":"2024-03-14T19:15:15.256Z","object_id":"16049bd5e91248dca0629c976e2f4eb7","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:03.781Z","object_updated":"2024-03-14T19:15:03.781Z","object_id":"81380abfc7614dd9b54fed0b3f408011","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:14:19.738Z","object_updated":"2024-03-14T19:14:19.738Z","object_id":"c9dd5f423b7a45aab7b8ca8bbbedf242","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T16:17:24.564Z","object_updated":"2023-10-10T16:17:24.615Z","object_id":"f75648a809854278ba2a624bcd1e69a3","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T16:16:21.840Z","object_updated":"2023-10-10T16:16:21.886Z","object_id":"d32ffc1106044ee390e513b48254d571","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T15:45:05.482Z","object_updated":"2023-10-10T15:45:05.534Z","object_id":"da4c1154744b4412a4b77a2573a7644c","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"26.0000","width":"20.0000","height":"11.0000","distance_unit":"in","weight":"27.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T11:48:19.327Z","object_updated":"2023-10-10T11:48:19.355Z","object_id":"d31e83e472864c888467dbd63fce2089","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"8.0000","width":"8.0000","height":"7.0000","distance_unit":"in","weight":"3.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T11:48:05.826Z","object_updated":"2023-10-10T11:48:05.852Z","object_id":"f5fa3592095b407c819c468e2d3294d5","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"8.0000","width":"8.0000","height":"7.0000","distance_unit":"in","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:49:51.807Z","object_updated":"2023-10-10T09:49:51.842Z","object_id":"5a297ba8a58941139da483573e271e65","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:46:58.619Z","object_updated":"2023-10-10T09:46:58.660Z","object_id":"c0252468924b437798bf6c34367c8eef","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2023-10-10T09:45:56.337Z","object_updated":"2023-10-10T09:45:56.357Z","object_id":"2427d106bb2d4e50a840399736bb4c1e","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"in","weight":"5.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"1","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1266'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:21 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=fa549e62565a47088e103169e85f139a; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '219'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:31:24.525Z","object_updated":"2024-03-14T19:31:24.525Z","object_id":"0cd2341d69634e0ba158ef312c7d66e4","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:12.220Z","object_updated":"2024-03-14T19:31:12.220Z","object_id":"46c9d017e2b24a15abaaa3fdc2255ba0","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:00.901Z","object_updated":"2024-03-14T19:31:00.901Z","object_id":"05101197a0b444b8ae69594e8d7cb2ea","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:30:23.231Z","object_updated":"2024-03-14T19:30:23.231Z","object_id":"db96b60388b2421aa8c9b0a2dcbda2a8","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:25:18.733Z","object_updated":"2024-03-14T19:25:18.733Z","object_id":"2a881c04050645deb8d59e695cddb472","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:25:07.757Z","object_updated":"2024-03-14T19:25:07.758Z","object_id":"8bffd56bd2b943c988c53f10dd1b05be","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:58.803Z","object_updated":"2024-03-14T19:24:58.803Z","object_id":"bd04679e183e45c58c3b39ae1653da98","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:49.525Z","object_updated":"2024-03-14T19:24:49.525Z","object_id":"2623b728581749d3aa81b5305fa0465f","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:44.183Z","object_updated":"2024-03-14T19:24:44.183Z","object_id":"0c0f83c11eda4a7fac76c35d70ced984","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:40.048Z","object_updated":"2024-03-14T19:24:40.048Z","object_id":"20fcd425c74f4e26b52b5dff4e111b61","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:33.839Z","object_updated":"2024-03-14T19:24:33.839Z","object_id":"4450e9585c314c77b04b70eb8b9b06dd","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:26.051Z","object_updated":"2024-03-14T19:24:26.051Z","object_id":"51f5d62f1c9143138ab9367f00af8623","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:23.216Z","object_updated":"2024-03-14T19:24:23.216Z","object_id":"96b11c1077b3420e8a709fa2cf04b5fa","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:19.163Z","object_updated":"2024-03-14T19:24:19.163Z","object_id":"38dc37798a494523ab12f29e0bdeb239","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:06.288Z","object_updated":"2024-03-14T19:24:06.288Z","object_id":"edd7072a4ae54e4ab425d18e033dff50","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:23:54.367Z","object_updated":"2024-03-14T19:23:54.367Z","object_id":"0533aeb4e2634b9fa34f3ef26d0719c6","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:23:16.339Z","object_updated":"2024-03-14T19:23:16.339Z","object_id":"1af64293164842edbff3c3c7ae9bcc0f","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:30.988Z","object_updated":"2024-03-14T19:16:30.988Z","object_id":"93d7d5c33d88487f9758e9f32bba8ddc","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:20.220Z","object_updated":"2024-03-14T19:16:20.220Z","object_id":"668f2e96e6ab445d9783eaf962fc033b","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:11.337Z","object_updated":"2024-03-14T19:16:11.337Z","object_id":"9c340ddf74a54f6fabf05c40b5df0747","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:16:02.103Z","object_updated":"2024-03-14T19:16:02.103Z","object_id":"d29eb461c832433a9f4379bb9dedcb39","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:55.905Z","object_updated":"2024-03-14T19:15:55.905Z","object_id":"84e65ae2916c4f44a2515887dac98ae1","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:51.579Z","object_updated":"2024-03-14T19:15:51.579Z","object_id":"eb29972467a04163adb37657f349a4e1","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:45.378Z","object_updated":"2024-03-14T19:15:45.378Z","object_id":"34a068e5053b4fd2827be1a7a5f77bcf","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:37.360Z","object_updated":"2024-03-14T19:15:37.360Z","object_id":"dc992eb67f274b19bd3fbc2fb7218521","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1184'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:26 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=12701d55701b4bb983c265537243f6fc; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '190'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:34:56.848Z","object_updated":"2024-03-14T19:34:56.848Z","object_id":"532a94add9d84f1d98c5bfebbfef970c","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:34:45.008Z","object_updated":"2024-03-14T19:34:45.008Z","object_id":"86303095551949fc8f92fefaa5ee3277","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:34:33.870Z","object_updated":"2024-03-14T19:34:33.870Z","object_id":"cb5a953bbbe8463d8fb3ab4eef2c3a12","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:33:55.289Z","object_updated":"2024-03-14T19:33:55.289Z","object_id":"7d86055825dc43229b5db5951ffad71b","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:32:23.181Z","object_updated":"2024-03-14T19:32:23.181Z","object_id":"13f27bacabf64ebfae13f8fe445b1a5b","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:32:12.973Z","object_updated":"2024-03-14T19:32:12.973Z","object_id":"95fdecbdf32941bdb66a675be7c372f9","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:32:03.993Z","object_updated":"2024-03-14T19:32:03.993Z","object_id":"ea6f43ac18d44a048cec6abd488b1c7e","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:54.823Z","object_updated":"2024-03-14T19:31:54.823Z","object_id":"bfe947c6026743bf8f1c7cecbc1e53ac","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:49.358Z","object_updated":"2024-03-14T19:31:49.358Z","object_id":"e7a7d34f55aa4e11a9b37f17680f5e4d","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:45.212Z","object_updated":"2024-03-14T19:31:45.212Z","object_id":"04b646d161b641d689b3d6ab2a678dee","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:38.950Z","object_updated":"2024-03-14T19:31:38.950Z","object_id":"4b70c2934676404b9eb275d5add77ec0","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:31.444Z","object_updated":"2024-03-14T19:31:31.444Z","object_id":"6c00e736c06242cd8dba95bd8b06234f","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:28.599Z","object_updated":"2024-03-14T19:31:28.599Z","object_id":"d6a83e18a3a9447ca733536d27b394a7","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:24.525Z","object_updated":"2024-03-14T19:31:24.525Z","object_id":"0cd2341d69634e0ba158ef312c7d66e4","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:12.220Z","object_updated":"2024-03-14T19:31:12.220Z","object_id":"46c9d017e2b24a15abaaa3fdc2255ba0","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:00.901Z","object_updated":"2024-03-14T19:31:00.901Z","object_id":"05101197a0b444b8ae69594e8d7cb2ea","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:30:23.231Z","object_updated":"2024-03-14T19:30:23.231Z","object_id":"db96b60388b2421aa8c9b0a2dcbda2a8","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:25:18.733Z","object_updated":"2024-03-14T19:25:18.733Z","object_id":"2a881c04050645deb8d59e695cddb472","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:25:07.757Z","object_updated":"2024-03-14T19:25:07.758Z","object_id":"8bffd56bd2b943c988c53f10dd1b05be","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:58.803Z","object_updated":"2024-03-14T19:24:58.803Z","object_id":"bd04679e183e45c58c3b39ae1653da98","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:49.525Z","object_updated":"2024-03-14T19:24:49.525Z","object_id":"2623b728581749d3aa81b5305fa0465f","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:44.183Z","object_updated":"2024-03-14T19:24:44.183Z","object_id":"0c0f83c11eda4a7fac76c35d70ced984","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:40.048Z","object_updated":"2024-03-14T19:24:40.048Z","object_id":"20fcd425c74f4e26b52b5dff4e111b61","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:33.839Z","object_updated":"2024-03-14T19:24:33.839Z","object_id":"4450e9585c314c77b04b70eb8b9b06dd","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:26.051Z","object_updated":"2024-03-14T19:24:26.051Z","object_id":"51f5d62f1c9143138ab9367f00af8623","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1184'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:34:59 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=274f4e8335e643a4858d1fb630d81edf; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '197'
+    status:
+      code: 200
+      message: OK
 version: 1

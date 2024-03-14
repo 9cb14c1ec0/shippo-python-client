@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/parcels/?results=2
   response:
@@ -26,14 +33,237 @@ interactions:
         +LTEuXzOiyqCtaDE46s+gefxdDz1fw3O6wns6vZmhUtCK5bmxf/ApvLxKbmSCjYyup1TfJidu7TG
         2wAR+Jdcy7aqc8T+MteZrsk7uTJed3RNEVpHDztEeUMEsF3XIVqiNbD/uV6a68PTMzX6GQ4fBAAA
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['399']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:07 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '399'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:07 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/?results=2
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2&results=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:15:27.600Z","object_updated":"2024-03-14T19:15:27.600Z","object_id":"3ba2c61685fd4942ba38cafb5aab00ac","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:15:15.256Z","object_updated":"2024-03-14T19:15:15.256Z","object_id":"16049bd5e91248dca0629c976e2f4eb7","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '391'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:33 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=9ab13f2fbe47449bb20125445d8225a1; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '1642'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/?results=2
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2&results=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:24:19.163Z","object_updated":"2024-03-14T19:24:19.163Z","object_id":"38dc37798a494523ab12f29e0bdeb239","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:24:06.288Z","object_updated":"2024-03-14T19:24:06.288Z","object_id":"edd7072a4ae54e4ab425d18e033dff50","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '391'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:22 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=ab7a57a5523a4e97926b75a4fb454f91; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '157'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/?results=2
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2&results=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:31:24.525Z","object_updated":"2024-03-14T19:31:24.525Z","object_id":"0cd2341d69634e0ba158ef312c7d66e4","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:31:12.220Z","object_updated":"2024-03-14T19:31:12.220Z","object_id":"46c9d017e2b24a15abaaa3fdc2255ba0","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '389'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:27 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=070e0cb605434027beb478d504e6e95e; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '153'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/parcels/?results=2
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/parcels/?page=2&results=2","previous":null,"results":[{"object_state":"VALID","object_created":"2024-03-14T19:34:56.848Z","object_updated":"2024-03-14T19:34:56.848Z","object_id":"532a94add9d84f1d98c5bfebbfef970c","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true},{"object_state":"VALID","object_created":"2024-03-14T19:34:45.008Z","object_updated":"2024-03-14T19:34:45.008Z","object_id":"86303095551949fc8f92fefaa5ee3277","object_owner":"903262028344@sendmeemail.xyz","template":null,"length":"5.0000","width":"5.0000","height":"5.0000","distance_unit":"cm","weight":"2.0000","mass_unit":"lb","value_amount":null,"value_currency":null,"metadata":"Customer
+        ID 123456","extra":{},"line_items":[],"test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '390'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:35:00 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=8b4de754d579451593b718fa8d791ddc; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '158'
+    status:
+      code: 200
+      message: OK
 version: 1

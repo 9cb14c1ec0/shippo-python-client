@@ -1,37 +1,252 @@
 interactions:
 - request:
-    body: !!python/unicode '{"customs_declaration": "b741b99f95e841639b54272834bc478c",
-      "address_from": "4f406a13253945a8bc8deb0f8266b245", "extra": {"signature_confirmation":
-      true, "reference_1": "", "insurance": {"currency": "USD", "amount": "200"},
-      "reference_2": ""}, "shipment_date": "2017-03-31T17:37:59.817Z", "submission_type":
-      "PICKUP", "metadata": "Customer ID 123456"}'
+    body: '{"customs_declaration": "b741b99f95e841639b54272834bc478c", "address_from":
+      "4f406a13253945a8bc8deb0f8266b245", "extra": {"signature_confirmation": true,
+      "reference_1": "", "insurance": {"currency": "USD", "amount": "200"}, "reference_2":
+      ""}, "shipment_date": "2017-03-31T17:37:59.817Z", "submission_type": "PICKUP",
+      "metadata": "Customer ID 123456"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['351']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/shipments/
   response:
-    body: {string: !!python/unicode '{"customs_declaration": ["CustomsDeclaration
-        with supplied object_id b741b99f95e841639b54272834bc478c not found."], "parcels":
-        ["This field is required."], "address_to": ["This field is required."]}'}
+    body:
+      string: '{"customs_declaration": ["CustomsDeclaration with supplied object_id
+        b741b99f95e841639b54272834bc478c not found."], "parcels": ["This field is
+        required."], "address_to": ["This field is required."]}'
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-length: ['198']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:41 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie']
-    status: {code: 400, message: BAD REQUEST}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-length:
+      - '198'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:41 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie
+    status:
+      code: 400
+      message: BAD REQUEST
+- request:
+    body: '{"address_from": "4f406a13253945a8bc8deb0f8266b245", "submission_type":
+      "PICKUP", "shipment_date": "2017-03-31T17:37:59.817Z", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "customs_declaration": "b741b99f95e841639b54272834bc478c", "metadata":
+      "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: '{"address_from":["Address with supplied object_id 4f406a13253945a8bc8deb0f8266b245
+        not found. Use the Addresses API (https://docs.goshippo.com/shippoapi/public-api/#tag/Addresses)
+        to first create an Address object."],"address_to":["This field is required."],"customs_declaration":["CustomsDeclaration
+        with supplied object_id b741b99f95e841639b54272834bc478c not found. Use the
+        CustomsDeclarations API (https://docs.goshippo.com/shippoapi/public-api/#tag/Customs-Declarations)
+        to first create a CustomsDeclaration object."],"parcels":["This field is required."]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '561'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:16:06 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '15'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"address_from": "4f406a13253945a8bc8deb0f8266b245", "submission_type":
+      "PICKUP", "shipment_date": "2017-03-31T17:37:59.817Z", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "customs_declaration": "b741b99f95e841639b54272834bc478c", "metadata":
+      "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: '{"address_from":["Address with supplied object_id 4f406a13253945a8bc8deb0f8266b245
+        not found. Use the Addresses API (https://docs.goshippo.com/shippoapi/public-api/#tag/Addresses)
+        to first create an Address object."],"address_to":["This field is required."],"customs_declaration":["CustomsDeclaration
+        with supplied object_id b741b99f95e841639b54272834bc478c not found. Use the
+        CustomsDeclarations API (https://docs.goshippo.com/shippoapi/public-api/#tag/Customs-Declarations)
+        to first create a CustomsDeclaration object."],"parcels":["This field is required."]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '561'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:24:53 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '15'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"address_from": "4f406a13253945a8bc8deb0f8266b245", "submission_type":
+      "PICKUP", "shipment_date": "2017-03-31T17:37:59.817Z", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "customs_declaration": "b741b99f95e841639b54272834bc478c", "metadata":
+      "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: '{"address_from":["Address with supplied object_id 4f406a13253945a8bc8deb0f8266b245
+        not found. Use the Addresses API (https://docs.goshippo.com/shippoapi/public-api/#tag/Addresses)
+        to first create an Address object."],"address_to":["This field is required."],"customs_declaration":["CustomsDeclaration
+        with supplied object_id b741b99f95e841639b54272834bc478c not found. Use the
+        CustomsDeclarations API (https://docs.goshippo.com/shippoapi/public-api/#tag/Customs-Declarations)
+        to first create a CustomsDeclaration object."],"parcels":["This field is required."]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '561'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:31:58 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '17'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"address_from": "4f406a13253945a8bc8deb0f8266b245", "submission_type":
+      "PICKUP", "shipment_date": "2017-03-31T17:37:59.817Z", "extra": {"signature_confirmation":
+      true, "reference_1": "", "reference_2": "", "insurance": {"amount": "200", "currency":
+      "USD"}}, "customs_declaration": "b741b99f95e841639b54272834bc478c", "metadata":
+      "Customer ID 123456"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/shipments/
+  response:
+    body:
+      string: '{"address_from":["Address with supplied object_id 4f406a13253945a8bc8deb0f8266b245
+        not found. Use the Addresses API (https://docs.goshippo.com/shippoapi/public-api/#tag/Addresses)
+        to first create an Address object."],"address_to":["This field is required."],"customs_declaration":["CustomsDeclaration
+        with supplied object_id b741b99f95e841639b54272834bc478c not found. Use the
+        CustomsDeclarations API (https://docs.goshippo.com/shippoapi/public-api/#tag/Customs-Declarations)
+        to first create a CustomsDeclaration object."],"parcels":["This field is required."]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '561'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:35:31 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '9'
+    status:
+      code: 400
+      message: Bad Request
 version: 1

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -59,7 +59,7 @@ class TransactionTests(ShippoTestCase):
         TRANSACTION['rate'] = rate.object_id
         transaction = shippo.Transaction.create(**TRANSACTION)
         retrieve = shippo.Transaction.retrieve(transaction.object_id)
-        self.assertItemsEqual(transaction, retrieve)
+        self.assertEqual(transaction, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/transaction')
     def test_invalid_retrieve(self):
@@ -79,4 +79,4 @@ class TransactionTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

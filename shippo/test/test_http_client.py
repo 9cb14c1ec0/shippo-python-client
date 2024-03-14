@@ -1,5 +1,5 @@
 import warnings
-import unittest2
+import unittest
 
 from mock import Mock
 import shippo
@@ -183,4 +183,4 @@ class UrlFetchClientTests(ShippoUnitTestCase, ClientTestBase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

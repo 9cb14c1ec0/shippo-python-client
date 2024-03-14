@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -47,7 +47,7 @@ class ParcelTests(ShippoTestCase):
     def test_retrieve(self):
         parcel = shippo.Parcel.create(**DUMMY_PARCEL)
         retrieve = shippo.Parcel.retrieve(parcel.object_id)
-        self.assertItemsEqual(parcel, retrieve)
+        self.assertEqual(parcel, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/parcel')
     def test_invalid_retrieve(self):
@@ -67,4 +67,4 @@ class ParcelTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

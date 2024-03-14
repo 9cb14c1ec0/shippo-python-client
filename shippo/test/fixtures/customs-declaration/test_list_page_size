@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/customs/declarations/?results=1
   response:
@@ -28,14 +35,241 @@ interactions:
         eSjMb4fTjDgdJxwPbVswZwDQYdXQALe79XqD8xTnM0wCR8BgbsVZyrjxR8r700JO5VHvpfsz7sES
         f1Ek4J1moKPNKroo3Oe147ZeH19/Adg4vckwAwAA
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['486']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:02:34 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '486'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:02:34 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/customs/declarations/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/customs/declarations/?page=2&results=1","previous":null,"results":[{"object_created":"2024-03-14T19:14:51.521Z","object_updated":"2024-03-14T19:14:51.521Z","object_id":"995d1514358b4f569dfcef81f4289dda","object_owner":"903262028344@sendmeemail.xyz","object_state":"VALID","address_importer":null,"certify_signer":"Laura
+        Behrens Wu","certify":true,"items":["897a8e200c83433e97e16daa2d7339f6"],"non_delivery_option":"ABANDON","contents_type":"MERCHANDISE","contents_explanation":"T-Shirt
+        purchase","exporter_reference":"","importer_reference":"","invoice":"#123123","commercial_invoice":false,"license":"","certificate":"","notes":"","eel_pfc":"NOEEI_30_37_a","aes_itn":"","disclaimer":"","incoterm":"","metadata":"Order
+        ID #123123","test":true,"duties_payor":null,"b13a_filing_option":"","b13a_number":"","invoiced_charges":null,"exporter_identification":null,"is_vat_collected":false}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '558'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:14:54 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=365e6c95d096482a9cfb764bc51d0c90; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/customs/declarations/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/customs/declarations/?page=2&results=1","previous":null,"results":[{"object_created":"2024-03-14T19:23:42.290Z","object_updated":"2024-03-14T19:23:42.290Z","object_id":"c19f4760f30044ec8ff24e9efdb900d4","object_owner":"903262028344@sendmeemail.xyz","object_state":"VALID","address_importer":null,"certify_signer":"Laura
+        Behrens Wu","certify":true,"items":["6275bc4bf2fd48358d9bbab88e38c969"],"non_delivery_option":"ABANDON","contents_type":"MERCHANDISE","contents_explanation":"T-Shirt
+        purchase","exporter_reference":"","importer_reference":"","invoice":"#123123","commercial_invoice":false,"license":"","certificate":"","notes":"","eel_pfc":"NOEEI_30_37_a","aes_itn":"","disclaimer":"","incoterm":"","metadata":"Order
+        ID #123123","test":true,"duties_payor":null,"b13a_filing_option":"","b13a_number":"","invoiced_charges":null,"exporter_identification":null,"is_vat_collected":false}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '559'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:23:45 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=c68a8522bc624d46b163d3a01d8381f2; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '38'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/customs/declarations/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/customs/declarations/?page=2&results=1","previous":null,"results":[{"object_created":"2024-03-14T19:30:48.903Z","object_updated":"2024-03-14T19:30:48.903Z","object_id":"ec430ce80dd345d4bc13e14a52ad93ce","object_owner":"903262028344@sendmeemail.xyz","object_state":"VALID","address_importer":null,"certify_signer":"Laura
+        Behrens Wu","certify":true,"items":["a05e69b0e4fd43b0a00251d5a9e1ac3b"],"non_delivery_option":"ABANDON","contents_type":"MERCHANDISE","contents_explanation":"T-Shirt
+        purchase","exporter_reference":"","importer_reference":"","invoice":"#123123","commercial_invoice":false,"license":"","certificate":"","notes":"","eel_pfc":"NOEEI_30_37_a","aes_itn":"","disclaimer":"","incoterm":"","metadata":"Order
+        ID #123123","test":true,"duties_payor":null,"b13a_filing_option":"","b13a_number":"","invoiced_charges":null,"exporter_identification":null,"is_vat_collected":false}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '555'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:30:51 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=d50783943ced40feb6c66f115a3fe0c3; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '33'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/customs/declarations/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/customs/declarations/?page=2&results=1","previous":null,"results":[{"object_created":"2024-03-14T19:34:21.215Z","object_updated":"2024-03-14T19:34:21.215Z","object_id":"02975b7b0fa84483a2ea4452c0a315b8","object_owner":"903262028344@sendmeemail.xyz","object_state":"VALID","address_importer":null,"certify_signer":"Laura
+        Behrens Wu","certify":true,"items":["3f49b37e3c2a49558a3b1fad435968ec"],"non_delivery_option":"ABANDON","contents_type":"MERCHANDISE","contents_explanation":"T-Shirt
+        purchase","exporter_reference":"","importer_reference":"","invoice":"#123123","commercial_invoice":false,"license":"","certificate":"","notes":"","eel_pfc":"NOEEI_30_37_a","aes_itn":"","disclaimer":"","incoterm":"","metadata":"Order
+        ID #123123","test":true,"duties_payor":null,"b13a_filing_option":"","b13a_number":"","invoiced_charges":null,"exporter_identification":null,"is_vat_collected":false}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '559'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:34:24 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=3fb2dca8a85243dfb5cf99b329b37511; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '27'
+    status:
+      code: 200
+      message: OK
 version: 1

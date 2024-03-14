@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/addresses/
   response:
@@ -33,14 +40,297 @@ interactions:
         TAjNMOEi5wL/spcGwfz7V8V/ckcUDGPx+6DBUibJg9HgafbtjTKhAXlgoKyZkIEHymopZGhRE64q
         Jngu90Tj9lNrK7z90vqJL5U73ASSrp8k4S3y6E+REZ0DXGD6qPzcjHDHz11aPlx9BfV7k0oBDAAA
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['798']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:02:20 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '798'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:02:20 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/addresses/?page=2","previous":null,"results":[{"object_created":"2024-03-14T19:14:29.772Z","object_updated":"2024-03-14T19:14:30.319Z","object_id":"15e1866f553046ae96d0478f57c42377","is_complete":false,"validation_results":{"is_valid":false,"messages":[{"source":"Shippo
+        Address Validator","code":"Address Not Found","type":"address_error","text":"The
+        address as submitted could not be found. Please check for excessive abbreviations
+        in the street address line or in the City name."}]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"0798987987987
+        CLAYTONKLJLKJL ST.","street2":"","street3":"","city":"SAN FRANCISCO","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:14:28.922Z","object_updated":"2024-03-14T19:14:30.309Z","object_id":"ab5d72eb38e24cd6a6e691bde265f0e0","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"ClaytonKLJLKJL
+        St.","street2":"","street3":"","city":"San Francisco","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:14:27.464Z","object_updated":"2024-03-14T19:14:27.481Z","object_id":"c6502eadb01142ce9e1ba8ea95598dfd","is_complete":false,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:14:26.789Z","object_updated":"2024-03-14T19:14:26.797Z","object_id":"5dd2d9e051be4d83aad42685172e0dd6","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:14:25.250Z","object_updated":"2024-03-14T19:14:25.280Z","object_id":"69d85eeee3194035b56a0f541084fcbd","is_complete":true,"validation_results":{"is_valid":true,"messages":[]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"215 Clayton St","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117-1913","country":"US","longitude":-122.44934,"latitude":37.77303,"phone":"0015553419393","email":"","is_residential":true,"metadata":"","test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '839'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:14:34 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=c1183ba59ff1415dbb1bb318a194e4ef; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '3535'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/addresses/?page=2","previous":null,"results":[{"object_created":"2024-03-14T19:23:26.957Z","object_updated":"2024-03-14T19:23:27.494Z","object_id":"544401dc18f24508b6414f9c437585f3","is_complete":false,"validation_results":{"is_valid":false,"messages":[{"source":"Shippo
+        Address Validator","code":"Address Not Found","type":"address_error","text":"The
+        address as submitted could not be found. Please check for excessive abbreviations
+        in the street address line or in the City name."}]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"0798987987987
+        CLAYTONKLJLKJL ST.","street2":"","street3":"","city":"SAN FRANCISCO","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:23:25.876Z","object_updated":"2024-03-14T19:23:27.484Z","object_id":"e3862a7e7eb54c19ad3ad142b42c6b10","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"ClaytonKLJLKJL
+        St.","street2":"","street3":"","city":"San Francisco","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:23:24.387Z","object_updated":"2024-03-14T19:23:24.400Z","object_id":"09d4184a0f334eff9e991f27d241598d","is_complete":false,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:23:23.692Z","object_updated":"2024-03-14T19:23:23.704Z","object_id":"1f58c9c291a94a95b940114a1e145824","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:23:22.098Z","object_updated":"2024-03-14T19:23:22.128Z","object_id":"1cad1e8ba2444d10a3f2a40c225bec29","is_complete":true,"validation_results":{"is_valid":true,"messages":[]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"215 Clayton St","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117-1913","country":"US","longitude":-122.44934,"latitude":37.77303,"phone":"0015553419393","email":"","is_residential":true,"metadata":"","test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '838'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:23:28 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=a6bb98e5a6f048e5bbc72e4eb2942045; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '244'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/addresses/?page=2","previous":null,"results":[{"object_created":"2024-03-14T19:30:33.671Z","object_updated":"2024-03-14T19:30:34.228Z","object_id":"c03ba37e05b848968b740be0a55b13b8","is_complete":false,"validation_results":{"is_valid":false,"messages":[{"source":"Shippo
+        Address Validator","code":"Address Not Found","type":"address_error","text":"The
+        address as submitted could not be found. Please check for excessive abbreviations
+        in the street address line or in the City name."}]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"0798987987987
+        CLAYTONKLJLKJL ST.","street2":"","street3":"","city":"SAN FRANCISCO","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:30:32.582Z","object_updated":"2024-03-14T19:30:34.222Z","object_id":"19f21a092c9d417fa55b504ef474415e","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"ClaytonKLJLKJL
+        St.","street2":"","street3":"","city":"San Francisco","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:30:31.089Z","object_updated":"2024-03-14T19:30:31.094Z","object_id":"728f5d78604f4eb38406896db16ea4fd","is_complete":false,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:30:30.393Z","object_updated":"2024-03-14T19:30:30.398Z","object_id":"82e510b8e303404186e8e41797939f81","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:30:28.914Z","object_updated":"2024-03-14T19:30:28.940Z","object_id":"c4279d2bcbff464a932cb515805fc1b3","is_complete":true,"validation_results":{"is_valid":true,"messages":[]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"215 Clayton St","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117-1913","country":"US","longitude":-122.44934,"latitude":37.77303,"phone":"0015553419393","email":"","is_residential":true,"metadata":"","test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '838'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:30:35 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=edcc4f91a4ca4734a903a743912d2d65; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '242'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/addresses/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/addresses/?page=2","previous":null,"results":[{"object_created":"2024-03-14T19:34:05.665Z","object_updated":"2024-03-14T19:34:06.200Z","object_id":"f92ff2ee98524e768a33a602285c4ce0","is_complete":false,"validation_results":{"is_valid":false,"messages":[{"source":"Shippo
+        Address Validator","code":"Address Not Found","type":"address_error","text":"The
+        address as submitted could not be found. Please check for excessive abbreviations
+        in the street address line or in the City name."}]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"0798987987987
+        CLAYTONKLJLKJL ST.","street2":"","street3":"","city":"SAN FRANCISCO","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:34:04.742Z","object_updated":"2024-03-14T19:34:06.196Z","object_id":"5341b32c5d1049a1a07149cb53387403","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"0798987987987","street1":"ClaytonKLJLKJL
+        St.","street2":"","street3":"","city":"San Francisco","state":"CA","zip":"74338","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:34:03.189Z","object_updated":"2024-03-14T19:34:03.201Z","object_id":"450f8ee6eb0640cbb2ab233978c3420a","is_complete":false,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:34:02.491Z","object_updated":"2024-03-14T19:34:02.501Z","object_id":"6d89475e2ea04e3386a7fc7708e659ad","is_complete":true,"validation_results":{},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"215","street1":"Clayton St.","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117","country":"US","longitude":null,"latitude":null,"phone":"0015553419393","email":"","is_residential":null,"metadata":"Customer
+        ID 123456","test":true},{"object_created":"2024-03-14T19:34:00.999Z","object_updated":"2024-03-14T19:34:01.022Z","object_id":"49d4940ff0554eecb80ae2959b6d55ee","is_complete":true,"validation_results":{"is_valid":true,"messages":[]},"object_owner":"903262028344@sendmeemail.xyz","name":"Laura
+        Behrens Wu","company":"Shippo","street_no":"","street1":"215 Clayton St","street2":"","street3":"","city":"San
+        Francisco","state":"CA","zip":"94117-1913","country":"US","longitude":-122.44934,"latitude":37.77303,"phone":"0015553419393","email":"","is_residential":true,"metadata":"","test":true}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '837'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:34:07 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=59572736418b4ba7a60e548afe6172b0; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '229'
+    status:
+      code: 200
+      message: OK
 version: 1

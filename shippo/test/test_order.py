@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 from datetime import datetime
@@ -51,7 +51,7 @@ class OrderTests(ShippoTestCase):
         ORDER['placed_at'] = datetime.now().isoformat() + "Z"
         order = shippo.Order.create(**ORDER)
         retrieve = shippo.Order.retrieve(order.object_id)
-        self.assertItemsEqual(order.object_id, retrieve.object_id)
+        self.assertEqual(order.object_id, retrieve.object_id)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/order')
     def test_invalid_retrieve(self):
@@ -70,4 +70,4 @@ class OrderTests(ShippoTestCase):
         self.assertEqual(len(order_list.results), pagesize)
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

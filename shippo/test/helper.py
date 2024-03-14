@@ -6,7 +6,7 @@ from shippo.config import config
 import vcr
 
 from mock import patch, Mock
-from unittest2 import TestCase
+from unittest import TestCase
 
 NOW = datetime.datetime.now()
 

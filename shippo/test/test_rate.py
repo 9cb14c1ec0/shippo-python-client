@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -39,7 +39,7 @@ class RateTests(ShippoTestCase):
             shipment.object_id, asynchronous=False)
         rate = rates.results[0]
         retrieve = shippo.Rate.retrieve(rate.object_id)
-        self.assertItemsEqual(rate, retrieve)
+        self.assertEqual(rate, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/rate')
     def test_invalid_retrieve(self):
@@ -48,4 +48,4 @@ class RateTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

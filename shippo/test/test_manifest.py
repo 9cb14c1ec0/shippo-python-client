@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -54,7 +54,7 @@ class ManifestTests(ShippoTestCase):
     def test_retrieve(self):
         manifest = create_mock_manifest()
         retrieve = shippo.Manifest.retrieve(manifest.object_id)
-        self.assertItemsEqual(manifest, retrieve)
+        self.assertEqual(manifest, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/manifest')
     def test_invalid_retrieve(self):
@@ -74,4 +74,4 @@ class ManifestTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

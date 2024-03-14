@@ -1,8 +1,8 @@
 
 from shippo import api_requestor, config
 from mock import patch, Mock
-from unittest2 import TestCase
-import unittest2
+from unittest import TestCase
+import unittest
 import sys
 
 from shippo.api_requestor import APIRequestor
@@ -66,4 +66,4 @@ class APIRequestorTests(TestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

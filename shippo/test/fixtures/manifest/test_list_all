@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin Thiagos-MacBook-Pro.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin Thiagos-MacBook-Pro.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/manifests/
   response:
@@ -44,14 +51,253 @@ interactions:
         m3js3PqXE88ol6LI0iUiEILQ6gwy85R1wQbohj/yYiSsRDS8+PiSQxCKSmDnNELibEGIUVhyUbDl
         ZnZy8jF5bT0pji5ULJPz/ee/AS5wm8SgDgAA
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['1395']
-      content-type: [application/json]
-      date: ['Thu, 30 Mar 2017 18:41:01 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '1395'
+      content-type:
+      - application/json
+      date:
+      - Thu, 30 Mar 2017 18:41:01 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/manifests/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/manifests/?page=2","previous":null,"results":[{"object_created":"2024-02-19T10:20:35.867Z","object_updated":"2024-02-19T10:20:36.164Z","object_id":"9de019830fec4ebcb9b3e70d638d4485","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2024-02-19T10:18:12.276Z","address_from":"4913e368873646ac998ce7ce3a5c1070","documents":["https://deliver.goshippo.com/92750901649158000853153542_5630_usps.pdf?Expires=1739874036&Signature=JFwPnC43hs1Md4dz32jGClEjcN7FEt1tdTw5Zy6EZ~ReyhzQW6ekO7~6oQapL5iP~KP4uvOJiKjrUDBQTtV2mni1EkvX~3enYzprzCXgizhkN~stK3E9AT2R4EMGdlfOFFy3DRXrLUUAQtzv-5TwcyJ-lc8WCV5woByEDpbDgn45DYRf-Nzl~foApgFoqfZagrSbey5CT3KYX4DR~-4hoR86knb8p9NdzZmsANMrMsVJcwasLWC9Ox3jrxkC3Lu1oIALFnRdR4AdimmRVgZ4mSgZ0ycsKvtyw88y2HENi2i4k0h4I34LFgyokc4WZHp-dh3znr-lzwqU143YaU0KLw__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["7fdeb3a1c94f4bdeb4a3c9f0eab4c60f"]},{"object_created":"2023-12-08T20:44:15.578Z","object_updated":"2023-12-08T20:44:15.774Z","object_id":"0ed998d54b694491bbfb68a78ddeb766","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"fa4b9a61af7f419da15fb92e35ea4655","documents":[],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["50a240bfb2d84b7c875a4d69523a6951"]},{"object_created":"2023-12-08T20:44:13.521Z","object_updated":"2023-12-08T20:44:13.731Z","object_id":"ab7b244726e34b27b04acad6a1d9a9fd","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"ab776adf146e4549bdc5e0f6916d0f9b","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-12-08T20:44:06.890Z","object_updated":"2023-12-08T20:44:07.067Z","object_id":"3206fc87d34145829dfbd8e1a04de437","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"8f623e09e52e408391172b797bb80e6d","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-10-30T23:54:40.506Z","object_updated":"2023-10-30T23:54:40.859Z","object_id":"83b5f3f2957e4cfb910e0670a26bdb1c","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2023-10-30T15:08:01.824Z","address_from":"75859da0b6714284ba45bd8b275e2cf5","documents":["https://deliver.goshippo.com/92750901649158000775608823_5630_usps.pdf?Expires=1730246080&Signature=YZnYOGtB73ZkXy~us9jhymvarx46sQ1JpWlZC-pQFX9wRJ-40p4brVuMPTsCYM-MRwG3~zRj2-CCQewFaCcPp4TJK74p1LmuMe6kxmCmdEpd3GhT1DD0G6vEvaUkrJXBkeP09HH6TQbEFdhuKO2ehxANoVn~XVYHu9SRV9GgewRkAkHkhsuu-WGHHzg3PMR1m~viJpB-qd8c78y5uzY1Ne5rmHLs0uAiLNdZk3a-AazONrClOUUf9HtstqxFx8odxdGgFF-qjKHCt8OEbCmEq3wlmO~KgemkcnzFsWsZloitVwpHJrJs876FwZADtYcBl5aEJuSsJcSjOn65BQs64w__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["a995ccc33b794bb8968446f156dd8e6f"]}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1532'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:15:12 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=15694476987f44b7b6da506b5d152b1b; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '279'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/manifests/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/manifests/?page=2","previous":null,"results":[{"object_created":"2024-02-19T10:20:35.867Z","object_updated":"2024-02-19T10:20:36.164Z","object_id":"9de019830fec4ebcb9b3e70d638d4485","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2024-02-19T10:18:12.276Z","address_from":"4913e368873646ac998ce7ce3a5c1070","documents":["https://deliver.goshippo.com/92750901649158000853153542_5630_usps.pdf?Expires=1739874036&Signature=JFwPnC43hs1Md4dz32jGClEjcN7FEt1tdTw5Zy6EZ~ReyhzQW6ekO7~6oQapL5iP~KP4uvOJiKjrUDBQTtV2mni1EkvX~3enYzprzCXgizhkN~stK3E9AT2R4EMGdlfOFFy3DRXrLUUAQtzv-5TwcyJ-lc8WCV5woByEDpbDgn45DYRf-Nzl~foApgFoqfZagrSbey5CT3KYX4DR~-4hoR86knb8p9NdzZmsANMrMsVJcwasLWC9Ox3jrxkC3Lu1oIALFnRdR4AdimmRVgZ4mSgZ0ycsKvtyw88y2HENi2i4k0h4I34LFgyokc4WZHp-dh3znr-lzwqU143YaU0KLw__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["7fdeb3a1c94f4bdeb4a3c9f0eab4c60f"]},{"object_created":"2023-12-08T20:44:15.578Z","object_updated":"2023-12-08T20:44:15.774Z","object_id":"0ed998d54b694491bbfb68a78ddeb766","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"fa4b9a61af7f419da15fb92e35ea4655","documents":[],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["50a240bfb2d84b7c875a4d69523a6951"]},{"object_created":"2023-12-08T20:44:13.521Z","object_updated":"2023-12-08T20:44:13.731Z","object_id":"ab7b244726e34b27b04acad6a1d9a9fd","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"ab776adf146e4549bdc5e0f6916d0f9b","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-12-08T20:44:06.890Z","object_updated":"2023-12-08T20:44:07.067Z","object_id":"3206fc87d34145829dfbd8e1a04de437","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"8f623e09e52e408391172b797bb80e6d","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-10-30T23:54:40.506Z","object_updated":"2023-10-30T23:54:40.859Z","object_id":"83b5f3f2957e4cfb910e0670a26bdb1c","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2023-10-30T15:08:01.824Z","address_from":"75859da0b6714284ba45bd8b275e2cf5","documents":["https://deliver.goshippo.com/92750901649158000775608823_5630_usps.pdf?Expires=1730246080&Signature=YZnYOGtB73ZkXy~us9jhymvarx46sQ1JpWlZC-pQFX9wRJ-40p4brVuMPTsCYM-MRwG3~zRj2-CCQewFaCcPp4TJK74p1LmuMe6kxmCmdEpd3GhT1DD0G6vEvaUkrJXBkeP09HH6TQbEFdhuKO2ehxANoVn~XVYHu9SRV9GgewRkAkHkhsuu-WGHHzg3PMR1m~viJpB-qd8c78y5uzY1Ne5rmHLs0uAiLNdZk3a-AazONrClOUUf9HtstqxFx8odxdGgFF-qjKHCt8OEbCmEq3wlmO~KgemkcnzFsWsZloitVwpHJrJs876FwZADtYcBl5aEJuSsJcSjOn65BQs64w__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["a995ccc33b794bb8968446f156dd8e6f"]}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1532'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:24:03 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=85329e3d293845e89a6637622bdf02d2; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/manifests/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/manifests/?page=2","previous":null,"results":[{"object_created":"2024-02-19T10:20:35.867Z","object_updated":"2024-02-19T10:20:36.164Z","object_id":"9de019830fec4ebcb9b3e70d638d4485","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2024-02-19T10:18:12.276Z","address_from":"4913e368873646ac998ce7ce3a5c1070","documents":["https://deliver.goshippo.com/92750901649158000853153542_5630_usps.pdf?Expires=1739874036&Signature=JFwPnC43hs1Md4dz32jGClEjcN7FEt1tdTw5Zy6EZ~ReyhzQW6ekO7~6oQapL5iP~KP4uvOJiKjrUDBQTtV2mni1EkvX~3enYzprzCXgizhkN~stK3E9AT2R4EMGdlfOFFy3DRXrLUUAQtzv-5TwcyJ-lc8WCV5woByEDpbDgn45DYRf-Nzl~foApgFoqfZagrSbey5CT3KYX4DR~-4hoR86knb8p9NdzZmsANMrMsVJcwasLWC9Ox3jrxkC3Lu1oIALFnRdR4AdimmRVgZ4mSgZ0ycsKvtyw88y2HENi2i4k0h4I34LFgyokc4WZHp-dh3znr-lzwqU143YaU0KLw__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["7fdeb3a1c94f4bdeb4a3c9f0eab4c60f"]},{"object_created":"2023-12-08T20:44:15.578Z","object_updated":"2023-12-08T20:44:15.774Z","object_id":"0ed998d54b694491bbfb68a78ddeb766","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"fa4b9a61af7f419da15fb92e35ea4655","documents":[],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["50a240bfb2d84b7c875a4d69523a6951"]},{"object_created":"2023-12-08T20:44:13.521Z","object_updated":"2023-12-08T20:44:13.731Z","object_id":"ab7b244726e34b27b04acad6a1d9a9fd","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"ab776adf146e4549bdc5e0f6916d0f9b","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-12-08T20:44:06.890Z","object_updated":"2023-12-08T20:44:07.067Z","object_id":"3206fc87d34145829dfbd8e1a04de437","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"8f623e09e52e408391172b797bb80e6d","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-10-30T23:54:40.506Z","object_updated":"2023-10-30T23:54:40.859Z","object_id":"83b5f3f2957e4cfb910e0670a26bdb1c","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2023-10-30T15:08:01.824Z","address_from":"75859da0b6714284ba45bd8b275e2cf5","documents":["https://deliver.goshippo.com/92750901649158000775608823_5630_usps.pdf?Expires=1730246080&Signature=YZnYOGtB73ZkXy~us9jhymvarx46sQ1JpWlZC-pQFX9wRJ-40p4brVuMPTsCYM-MRwG3~zRj2-CCQewFaCcPp4TJK74p1LmuMe6kxmCmdEpd3GhT1DD0G6vEvaUkrJXBkeP09HH6TQbEFdhuKO2ehxANoVn~XVYHu9SRV9GgewRkAkHkhsuu-WGHHzg3PMR1m~viJpB-qd8c78y5uzY1Ne5rmHLs0uAiLNdZk3a-AazONrClOUUf9HtstqxFx8odxdGgFF-qjKHCt8OEbCmEq3wlmO~KgemkcnzFsWsZloitVwpHJrJs876FwZADtYcBl5aEJuSsJcSjOn65BQs64w__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["a995ccc33b794bb8968446f156dd8e6f"]}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1532'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:31:09 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=bbfaf80382d74c1d813d56420450ddb0; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '102'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/manifests/
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/manifests/?page=2","previous":null,"results":[{"object_created":"2024-02-19T10:20:35.867Z","object_updated":"2024-02-19T10:20:36.164Z","object_id":"9de019830fec4ebcb9b3e70d638d4485","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2024-02-19T10:18:12.276Z","address_from":"4913e368873646ac998ce7ce3a5c1070","documents":["https://deliver.goshippo.com/92750901649158000853153542_5630_usps.pdf?Expires=1739874036&Signature=JFwPnC43hs1Md4dz32jGClEjcN7FEt1tdTw5Zy6EZ~ReyhzQW6ekO7~6oQapL5iP~KP4uvOJiKjrUDBQTtV2mni1EkvX~3enYzprzCXgizhkN~stK3E9AT2R4EMGdlfOFFy3DRXrLUUAQtzv-5TwcyJ-lc8WCV5woByEDpbDgn45DYRf-Nzl~foApgFoqfZagrSbey5CT3KYX4DR~-4hoR86knb8p9NdzZmsANMrMsVJcwasLWC9Ox3jrxkC3Lu1oIALFnRdR4AdimmRVgZ4mSgZ0ycsKvtyw88y2HENi2i4k0h4I34LFgyokc4WZHp-dh3znr-lzwqU143YaU0KLw__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["7fdeb3a1c94f4bdeb4a3c9f0eab4c60f"]},{"object_created":"2023-12-08T20:44:15.578Z","object_updated":"2023-12-08T20:44:15.774Z","object_id":"0ed998d54b694491bbfb68a78ddeb766","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"fa4b9a61af7f419da15fb92e35ea4655","documents":[],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["50a240bfb2d84b7c875a4d69523a6951"]},{"object_created":"2023-12-08T20:44:13.521Z","object_updated":"2023-12-08T20:44:13.731Z","object_id":"ab7b244726e34b27b04acad6a1d9a9fd","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"ab776adf146e4549bdc5e0f6916d0f9b","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-12-08T20:44:06.890Z","object_updated":"2023-12-08T20:44:07.067Z","object_id":"3206fc87d34145829dfbd8e1a04de437","object_owner":"903262028344@sendmeemail.xyz","status":"ERROR","errors":[{"code":"manifest_invalid_transactions","message":"For
+        this carrier, all shipments must be manifested on the same day that they are
+        created regardless of shipment date."}],"provider":"usps","shipment_date":"2023-12-06T14:34:15.733Z","address_from":"8f623e09e52e408391172b797bb80e6d","documents":[],"carrier_account":"","transactions":[]},{"object_created":"2023-10-30T23:54:40.506Z","object_updated":"2023-10-30T23:54:40.859Z","object_id":"83b5f3f2957e4cfb910e0670a26bdb1c","object_owner":"903262028344@sendmeemail.xyz","status":"SUCCESS","errors":[],"provider":"usps","shipment_date":"2023-10-30T15:08:01.824Z","address_from":"75859da0b6714284ba45bd8b275e2cf5","documents":["https://deliver.goshippo.com/92750901649158000775608823_5630_usps.pdf?Expires=1730246080&Signature=YZnYOGtB73ZkXy~us9jhymvarx46sQ1JpWlZC-pQFX9wRJ-40p4brVuMPTsCYM-MRwG3~zRj2-CCQewFaCcPp4TJK74p1LmuMe6kxmCmdEpd3GhT1DD0G6vEvaUkrJXBkeP09HH6TQbEFdhuKO2ehxANoVn~XVYHu9SRV9GgewRkAkHkhsuu-WGHHzg3PMR1m~viJpB-qd8c78y5uzY1Ne5rmHLs0uAiLNdZk3a-AazONrClOUUf9HtstqxFx8odxdGgFF-qjKHCt8OEbCmEq3wlmO~KgemkcnzFsWsZloitVwpHJrJs876FwZADtYcBl5aEJuSsJcSjOn65BQs64w__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ"],"carrier_account":"a20724d3827d493a805a637fc09e4357","transactions":["a995ccc33b794bb8968446f156dd8e6f"]}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1532'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:34:42 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=86ca2a2e30ff4b0b99daa6293d8ced60; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '100'
+    status:
+      code: 200
+      message: OK
 version: 1

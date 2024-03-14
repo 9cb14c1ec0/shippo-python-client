@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -58,7 +58,7 @@ class BatchTests(ShippoTestCase):
         BATCH = DUMMY_BATCH.copy()
         batch = shippo.Batch.create(**BATCH)
         retrieve = shippo.Batch.retrieve(batch.object_id)
-        self.assertItemsEqual(batch, retrieve)
+        self.assertEqual(batch, retrieve)
         # Leave enough time for the batch to be processed
         retrieve = shippo.Batch.retrieve(
             batch.object_id,
@@ -158,4 +158,4 @@ class BatchTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

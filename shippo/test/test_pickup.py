@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 from datetime import datetime, timedelta
@@ -52,4 +52,4 @@ class PickupTests(ShippoTestCase):
             self.assertEqual(pickup.status, 'SUCCESS')
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

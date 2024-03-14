@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unittest2
+import unittest
 
 from mock import patch
 
@@ -58,7 +58,7 @@ class CustomsDeclarationTests(ShippoTestCase):
         # Test Retrieving Object
         retrieve = shippo.CustomsDeclaration.retrieve(
             CustomsDeclaration.object_id)
-        self.assertItemsEqual(CustomsDeclaration, retrieve)
+        self.assertEqual(CustomsDeclaration, retrieve)
 
     @shippo_vcr.use_cassette(cassette_library_dir='shippo/test/fixtures/customs-declaration')
     def test_invalid_retrieve(self):
@@ -81,4 +81,4 @@ class CustomsDeclarationTests(ShippoTestCase):
 
 
 if __name__ == '__main__':
-    unittest2.main()
+    unittest.main()

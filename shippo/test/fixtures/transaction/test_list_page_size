@@ -2,17 +2,24 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: GET
     uri: https://api.goshippo.com/transactions/?results=1
   response:
@@ -27,14 +34,233 @@ interactions:
         tDMdZCpc5rirmO6Rwla31yvKKl6L6UdIBziN23GoeYuK807wiinVyKqVrKctZbDjffF0//QP6YVT
         u5YCAAA=
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['404']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:04:12 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 200, message: OK}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '404'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:04:12 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/transactions/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/transactions/?page=2&results=1","previous":null,"results":[{"object_state":"VALID","status":"SUCCESS","object_created":"2024-03-14T19:16:24.332Z","object_updated":"2024-03-14T19:16:25.520Z","object_id":"5d3cb9d24e2141919ac95d6567e3b336","object_owner":"903262028344@sendmeemail.xyz","test":true,"rate":"2dabc1fb77d6456db9745e50c5707e72","tracking_number":"92108903332000000000000011","tracking_status":"UNKNOWN","eta":null,"tracking_url_provider":"https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=92108903332000000000000011","label_url":"https://deliver.goshippo.com/5d3cb9d24e2141919ac95d6567e3b336.pdf?Expires=1741979785&Signature=qM33zrXkadLAx3qZQM6jjQKe5CkEjxooKIaNYcYwe~89MmLTbEeWdPsYnJYIGSk8J2GrXCvJK~WlbizfV5hB2aUs4KYnNqjkNLn75D0ESjs5vcq6FNyvVH8U9TWEAsCv6mXNi~HOaAe0SdO3J35wKLQ-I3W8Y1nBZHzBdCrEsz7VPTUYKVUc4ECY~TN5i82W-90XLpybSQzq7pjIup1DtANgF6oNbK4BMW0JlJ1SSKIhSeeeb2IyJARr1OPeqo3aLXtRAfn9-ibURG03hbNYJopHfbW8soRXZaZZy0FwAUws5mOVYkEo3qIWH4Z5BFh25OvD-DH0r2I8op2xHvaubQ__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ","commercial_invoice_url":null,"messages":[],"order":null,"metadata":"Customer
+        ID 123456","parcel":"41ef6e63d8be45f891c9356142a82d3a","billing":{"payments":[]},"qr_code_url":null}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '848'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:16:28 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=22e4398dc12d4e6db6a2aef903b7bb19; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/transactions/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/transactions/?page=2&results=1","previous":null,"results":[{"object_state":"VALID","status":"SUCCESS","object_created":"2024-03-14T19:25:13.315Z","object_updated":"2024-03-14T19:25:15.895Z","object_id":"00831b85fb3c44118811d0c88162ddd7","object_owner":"903262028344@sendmeemail.xyz","test":true,"rate":"1044f2f66d9646d19b6121ae6720f716","tracking_number":"1ZXXXXXXXXXXXXXXXX","tracking_status":"UNKNOWN","eta":null,"tracking_url_provider":"http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZXXXXXXXXXXXXXXXX","label_url":"https://deliver.goshippo.com/00831b85fb3c44118811d0c88162ddd7.pdf?Expires=1741980315&Signature=Z9TcMoFBo2vZhrcMTC~Ff2tjQnIuCulULdGcEExcawGcQE~HHXuoqwsnEQQP65fCeROZQCiDZXUIU4s4XqmzdNjYyYfnA15KzSTrjmz5O-Y0urqmI20LPiYMjHVgl2-jmeGYWN2SaXs6c9eFLMVvAl-1H6gS1QLc4LpAWN9UUnSFm5T~udvnfAmAsPH~qmBufwbE9np6oDgOGqIXQgQiH~bqH82DMUImeX6PCmjTZxENhyeeC4vHGU~womCnhnGN5ymBmZJYNXirrPkIhH8xbFUjZyOgk~-TWf4~kBZpZ6lsJtQOCj-Q4r1I4nw0UbXRFHxLbyhsCXBjQH~7~jy3wA__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ","commercial_invoice_url":null,"messages":[{"source":"UPS","code":"121943","text":"Invalid
+        Date. Changed to today''s date"}],"order":null,"metadata":"Customer ID 123456","parcel":"2b4614c107324137810102a389007545","billing":{"payments":[]},"qr_code_url":null}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '955'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:25:16 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=8f1f9941f5004e6f94bb6dcf2c08bf81; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/transactions/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/transactions/?page=2&results=1","previous":null,"results":[{"object_state":"VALID","status":"SUCCESS","object_created":"2024-03-14T19:32:17.003Z","object_updated":"2024-03-14T19:32:19.306Z","object_id":"35d4f5509530468d8c9e6b937aafbf7d","object_owner":"903262028344@sendmeemail.xyz","test":true,"rate":"288147c33f694118a59389fb4e326a7f","tracking_number":"1ZXXXXXXXXXXXXXXXX","tracking_status":"UNKNOWN","eta":null,"tracking_url_provider":"http://wwwapps.ups.com/WebTracking/track?HTMLVersion=5.0&loc=en_US&Requester=UPSHome&WBPM_lid=homepage%2Fct1.html_pnl_trk&track.x=Track&trackNums=1ZXXXXXXXXXXXXXXXX","label_url":"https://deliver.goshippo.com/35d4f5509530468d8c9e6b937aafbf7d.pdf?Expires=1741980739&Signature=mJIwSvb1uwoXam2ptSQWEcfDdCsYuDi3ri51fPaTTpZHBy12mcYWOQ963~MtPR-IWARS9CwkBSCn9cvQ9iaG2kPWK5R8pfq0UT3by~AZmBQiB7uqok8eX7LEUJGJWKEsSLnRtR7lP6tiGpVmmO72Vhm0d~LpOJonj3IwipZ6JxwaQ3tqK-H98PCDto3gcvbXrmE0~xFxfPSqiyrPZAkdmo390hthd5p0MGu3PlH5l6btGFQqVysCFDVCm2Adsodv0E1warQ4htWepJskGM3IVWLd9wWANH1nG-kXgWs-r4mjqegXmLRHygnfqftxOnaT2XeIUSBMcKF0flQX57gmbQ__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ","commercial_invoice_url":null,"messages":[{"source":"UPS","code":"121943","text":"Invalid
+        Date. Changed to today''s date"}],"order":null,"metadata":"Customer ID 123456","parcel":"1e5128c7459e423bafa9a770d54f235b","billing":{"payments":[]},"qr_code_url":null}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '951'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:32:21 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=c2cf4cafb1504b8181a5beae12eb8a15; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '980'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: GET
+    uri: https://api.goshippo.com/transactions/?results=1
+  response:
+    body:
+      string: '{"next":"https://api.goshippo.com/transactions/?page=2&results=1","previous":null,"results":[{"object_state":"VALID","status":"SUCCESS","object_created":"2024-03-14T19:35:49.924Z","object_updated":"2024-03-14T19:35:51.204Z","object_id":"d8e578b4d4944330a1c03114005858b1","object_owner":"903262028344@sendmeemail.xyz","test":true,"rate":"14270ad3044c4a4a9a7be34c3230caca","tracking_number":"92108903332000000000000011","tracking_status":"UNKNOWN","eta":null,"tracking_url_provider":"https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=92108903332000000000000011","label_url":"https://deliver.goshippo.com/d8e578b4d4944330a1c03114005858b1.pdf?Expires=1741980950&Signature=KcuaPIoIKpmepZLR4G53KQ7plH2VriquGdRgsyBFh5TKJ0zBz~Nx3ryjgLbdkuyEj~v7gxM5Ug-sSarui6xgcpn96i4uitWzKXmXEFUG3Wk1SK3rLBQQ3erbuDhlMy0twOoCOcW4p08jv9P1QgWcm9S7ZSm0Kz~cpf3VGEYe1-TeW-xIHqSq-ZmwCEdaz78-Y7QhW8U131ZhhXaC4sHoqtk77cih-kP4SN-l7r-n5cxyHw997-8XwUSWGlxRs2LMVq1LK~AtDnksdOeASKjRlcYngfQ6G5wWG1lJ7g7YSdH0oqfbwfzelqWTTJbKP~9YQH43YF5ysTggeJ6VV1lq1A__&Key-Pair-Id=APKAJRICFXQ2S4YUQRSQ","commercial_invoice_url":null,"messages":[],"order":null,"metadata":"Customer
+        ID 123456","parcel":"d9741d7c477d4b4393a1ee22ad83e43c","billing":{"payments":[]},"qr_code_url":null}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '844'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 14 Mar 2024 19:35:53 GMT
+      allow:
+      - OPTIONS
+      content-encoding:
+      - gzip
+      content-language:
+      - en-us
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - istio-envoy
+      set-cookie:
+      - tracker_sessionid=3971d7d2146148b991c6a235c5af39e4; Domain=.goshippo.com;
+        Path=/
+      vary:
+      - Accept-Language, Cookie, Origin, Accept-Encoding
+      x-envoy-upstream-service-time:
+      - '93'
+    status:
+      code: 200
+      message: OK
 version: 1

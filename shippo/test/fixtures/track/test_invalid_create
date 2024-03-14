@@ -1,51 +1,77 @@
 interactions:
 - request:
-    body: !!python/unicode '{"tracking_number": "9205590164917337534322", "carrier":
-      "EXAMPLE_OF_INVALID_CARRIER", "metadata": "metadata"}'
+    body: '{"tracking_number": "9205590164917337534322", "carrier": "EXAMPLE_OF_INVALID_CARRIER",
+      "metadata": "metadata"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['110']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/tracks/
   response:
-    body: {string: !!python/unicode '{"carrier": ["Invalid value specified for provider
-        ''EXAMPLE_OF_INVALID_CARRIER''"]}'}
+    body:
+      string: '{"carrier": ["Invalid value specified for provider ''EXAMPLE_OF_INVALID_CARRIER''"]}'
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-length: ['82']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:57 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie']
-    status: {code: 400, message: BAD REQUEST}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-length:
+      - '82'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:57 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie
+    status:
+      code: 400
+      message: BAD REQUEST
 - request:
-    body: !!python/unicode '{"tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER",
-      "carrier": "usps", "metadata": "metadata"}'
+    body: '{"tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER", "carrier": "usps",
+      "metadata": "metadata"}'
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['99']
-      Content-Type: [application/json]
-      Shippo-API-Version: ['2017-03-29']
-      User-Agent: [Shippo/v1 PythonBindings/1.4.0]
-      X-Shippo-Client-User-Agent: ['{"lang": "python", "publisher": "shippo", "httplib":
-          "requests", "uname": "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel
-          Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64
-          x86_64 i386", "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit",
-          "bindings_version": "1.4.0"}']
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2017-03-29'
+      User-Agent:
+      - Shippo/v1 PythonBindings/1.4.0
+      X-Shippo-Client-User-Agent:
+      - '{"lang": "python", "publisher": "shippo", "httplib": "requests", "uname":
+        "Darwin guozhen-shippo-mbp.local 16.4.0 Darwin Kernel Version 16.4.0: Thu
+        Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64 x86_64 i386",
+        "lang_version": "2.7.10", "platform": "Darwin-16.4.0-x86_64-i386-64bit", "bindings_version":
+        "1.4.0"}'
     method: POST
     uri: https://api.goshippo.com/tracks/
   response:
@@ -56,14 +82,361 @@ interactions:
         ydxCJWEcX452pkaK0Ig3L5qSSSNQ1WP7Lak6MShtU5gssz1A2goN6skZZPCErN6D8gGi9QXN4adc
         Xm7hlNYBbd19051mdMv/jTvXKOvbTufqA3AEdEUrAQAA
     headers:
-      allow: [OPTIONS]
-      connection: [keep-alive]
-      content-encoding: [gzip]
-      content-length: ['204']
-      content-type: [application/json]
-      date: ['Mon, 10 Apr 2017 21:03:58 GMT']
-      p3p: [CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"]
-      server: [nginx/1.8.0]
-      vary: ['Host, Cookie, Accept-Encoding']
-    status: {code: 201, message: CREATED}
+      allow:
+      - OPTIONS
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '204'
+      content-type:
+      - application/json
+      date:
+      - Mon, 10 Apr 2017 21:03:58 GMT
+      p3p:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      server:
+      - nginx/1.8.0
+      vary:
+      - Host, Cookie, Accept-Encoding
+    status:
+      code: 201
+      message: CREATED
+- request:
+    body: '{"carrier": "EXAMPLE_OF_INVALID_CARRIER", "tracking_number": "9205590164917337534322",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLE_OF_INVALID_CARRIER is not a valid test tracking
+        carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:16:16 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "usps", "tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"usps is not a valid test tracking carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:16:16 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "EXAMPLE_OF_INVALID_CARRIER", "tracking_number": "9205590164917337534322",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLE_OF_INVALID_CARRIER is not a valid test tracking
+        carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:25:03 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '8'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "usps", "tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"usps is not a valid test tracking carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:25:04 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '5'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "EXAMPLE_OF_INVALID_CARRIER", "tracking_number": "9205590164917337534322",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLE_OF_INVALID_CARRIER is not a valid test tracking
+        carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:32:08 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "shippo", "tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLEOFINVALID123TRACKINGNUMBER is not a valid test tracking
+        number. Please use the sample tracking numbers provided in the Shippo API
+        docs: ''https://goshippo.com/docs/tracking''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:32:09 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "EXAMPLE_OF_INVALID_CARRIER", "tracking_number": "9205590164917337534322",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLE_OF_INVALID_CARRIER is not a valid test tracking
+        carrier. Please use ''shippo''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:35:41 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"carrier": "shippo", "tracking_number": "EXAMPLEOFINVALID123TRACKINGNUMBER",
+      "metadata": "metadata"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json
+      Shippo-API-Version:
+      - '2018-02-08'
+      User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3
+      X-Shippo-Client-User-Agent:
+      - MyAwesomeApp/1.0.0 ShippoPythonSDK/2.1.3 Python/3.11.2
+    method: POST
+    uri: https://api.goshippo.com/tracks/
+  response:
+    body:
+      string: '{"detail":"EXAMPLEOFINVALID123TRACKINGNUMBER is not a valid test tracking
+        number. Please use the sample tracking numbers provided in the Shippo API
+        docs: ''https://goshippo.com/docs/tracking''"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 14 Mar 2024 19:35:42 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 400
+      message: Bad Request
 version: 1
