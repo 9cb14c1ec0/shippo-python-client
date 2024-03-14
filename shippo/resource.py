@@ -272,6 +272,18 @@ class CustomsDeclaration(CreateableAPIResource, ListableAPIResource, FetchableAP
         return "customs/declarations/"
 
 
+class Invoice(ListableAPIResource, FetchableAPIResource):
+    @classmethod
+    def class_url(cls):
+        return "invoices/"
+
+
+class InvoiceItem(ListableAPIResource, FetchableAPIResource):
+    @classmethod
+    def class_url(cls):
+        return "invoice-items/"
+
+        
 class Order(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
     """
     An Order allows you group line items for a shipment.

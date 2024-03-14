@@ -4,6 +4,8 @@ from shippo.resource import (
     CarrierAccount,
     CustomsDeclaration,
     CustomsItem,
+    Invoice,
+    InvoiceItem,
     LineItem,
     Manifest,
     Order,

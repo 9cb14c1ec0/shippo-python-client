@@ -120,6 +120,7 @@ Connect with multiple different carriers, get discounted shipping labels, track 
 The Shippo API provides in depth support of carrier and shipping functionalities. Here are just some of the features we support through the API:
 
 - Shipping rates & labels - [Docs](https://goshippo.com/docs/first-shipment)
+- Shippo Invoices and Invoice Items
 - Tracking for any shipment with just the tracking number - [Docs](https://goshippo.com/docs/tracking)
 - Batch label generation - [Docs](https://goshippo.com/docs/batch)
 - Multi-piece shipments - [Docs](https://goshippo.com/docs/multipiece)
