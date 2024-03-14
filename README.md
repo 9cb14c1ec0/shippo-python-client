@@ -49,7 +49,7 @@ or pip (https://pip.pypa.io/en/latest/index.html):
 
 ```
 #!shell
-sudo pip install shippo
+sudo pip install shippo3
 ```
 
 #### To test:
