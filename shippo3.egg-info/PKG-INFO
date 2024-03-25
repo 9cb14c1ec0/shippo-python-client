@@ -1,6 +1,6 @@
-Metadata-Version: 3.0
+Metadata-Version: 2.1
 Name: shippo3
-Version: 3.0.0
+Version: 3.0.1
 Summary: Shipping API Python library (USPS, FedEx, UPS and more)
 Home-page: https://goshippo.com/
 Author: Shippo

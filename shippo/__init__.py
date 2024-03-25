@@ -18,3 +18,4 @@ from shippo.resource import (
     Transaction,
     Webhook,
 )
+from shippo.resource import (V2Addresses)

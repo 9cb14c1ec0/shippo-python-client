@@ -207,6 +207,25 @@ class ListableAPIResource(APIResource):
         return convert_to_shippo_object(response, api_key)
 
 
+class V2ListableAPIResource(APIResource):
+
+    @classmethod
+    def all(cls, api_key=None, limit=None, offset=None, **params):
+        """
+        To retrieve a list of all the objects in a class. The size of page and
+            the page number can be specified respectively cls.all(<size>,<page>)
+            **NOTE: To specify a page number, the page size must also be provided
+        """
+        requestor = api_requestor.APIRequestor(api_key)
+        url = cls.class_url()
+        if limit:
+            url = url+'?limit='+urllib.parse.quote_plus(str(limit))
+        if offset:
+            url = url+'&offset='+urllib.parse.quote_plus(str(offset))
+        response, api_key = requestor.request('get', url, params)
+        return convert_to_shippo_object(response, api_key)
+
+
 class FetchableAPIResource(APIResource):
 
     @classmethod
@@ -236,7 +255,7 @@ class UpdateableAPIResource(APIResource):
         extn = urllib.parse.quote_plus(object_id)
         requestor = api_requestor.APIRequestor(api_key)
         url = cls.class_url() + extn
-        response, api_key = requestor.request('delete', url, params)
+        requestor.request('delete', url, params)
         return "Deleted the webhook"
 
 
@@ -256,6 +275,19 @@ class Address(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
     def class_url(cls):
         cls_name = cls.class_name()
         return "%ses/" % (cls_name,)
+
+
+class V2Addresses(ListableAPIResource, CreateableAPIResource, FetchableAPIResource, UpdateableAPIResource,):
+    @classmethod
+    def class_url(cls):
+        return 'v2/addresses/'
+
+    @classmethod
+    def parse(cls, address_string, api_key=None):
+        url = cls.class_url() + 'parse'
+        requestor = api_requestor.APIRequestor(api_key)
+        response, api_key = requestor.request('get', url, {'address': address_string})
+        return convert_to_shippo_object(response, api_key)
 
 
 class CustomsItem(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -305,7 +337,8 @@ class Parcel(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
 
 class Pickup(CreateableAPIResource):
     """
-    A Pickup allows you to schedule pickups with USPS and DHL Express for eligible shipments that you have already created.
+    A Pickup allows you to schedule pickups with USPS and DHL Express for eligible shipments that you have already
+    created.
     """
 
     @classmethod
@@ -344,7 +377,7 @@ class Shipment(CreateableAPIResource, ListableAPIResource, FetchableAPIResource)
     """
 
     @classmethod
-    def get_rates(cls, object_id, asynchronous=False, api_key=None, currency=None, **params):
+    def get_rates(cls, object_id, asynchronous=False, api_key=None, currency=None):
         """
             Given a valid shipment object_id, all possible rates are calculated and returned.
         """
@@ -409,7 +442,8 @@ class CarrierAccount(CreateableAPIResource, ListableAPIResource, FetchableAPIRes
 
 class Webhook(CreateableAPIResource, ListableAPIResource, FetchableAPIResource, UpdateableAPIResource):
     """
-    retrieve, update and delete webhooks for a Shippo account programmatically. The same functionality is already exposed in the Shippo dashboard at https://app.goshippo.com/api/.
+    retrieve, update and delete webhooks for a Shippo account programmatically. The same functionality is already
+    exposed in the Shippo dashboard at https://app.goshippo.com/api/.
 
     To add both a webhook and track a url at the same see the shippo.Track.create function.
     """
@@ -430,11 +464,10 @@ class Webhook(CreateableAPIResource, ListableAPIResource, FetchableAPIResource, 
 
         Arguments:
             **params
-                url (str) -- url of your webhook (make sure it is not behind basic auth.
+                url (str) -- url of your webhook (make sure it is not behind basic auth.)
                                   endpoint must return 200 when it receives a POST  
                 event (str) -- any valid webhook event as listed here https://goshippo.com/docs/webhooks.
                 is_test (str) -- set the webhook object to test or live mode
-        Keyword Arguments:
             api_key (str) -- an api key, if not specified here it will default to the key
                              set in your environment var or by shippo.api_key = "..."
 
@@ -445,26 +478,25 @@ class Webhook(CreateableAPIResource, ListableAPIResource, FetchableAPIResource, 
         return super(Webhook, cls).create(api_key, **params)
         
     @classmethod
-    def update_webhook(cls,object_id, api_key=None, **params):
+    def update_webhook(cls, api_key=None, **params):
         """ 
             Update webhook's url, is_test, and/or event
         """
         return super(Webhook, cls).update(api_key, **params)
 
     @classmethod
-    def delete(cls, object_id,api_key=None, **params):
+    def delete(cls, object_id, api_key=None, **params):
         """ Remove webhook
 
         Arguments:
             object_id (str) -- object_id of webhook
-        Keyword Arguments:
             api_key (str) -- an api key, if not specified here it will default to the key
                              set in your environment var or by shippo.api_key = "..."
 
         Returns:
             (ShippoObject) -- The server response
         """
-        return super(Webhook, cls).remove(object_id,api_key, **params)
+        return super(Webhook, cls).remove(object_id, api_key, **params)
 
 
 class Track(CreateableAPIResource):
@@ -486,7 +518,6 @@ class Track(CreateableAPIResource):
                                     see https://goshippo.com/docs/reference#carriers
             tracking_number (str) -- tracking number to track
 
-        Keyword Arguments:
             api_key (str) -- an api key, if not specified here it will default to the key
                              set in your environment var or by shippo.api_key = "..."
 
@@ -495,7 +526,6 @@ class Track(CreateableAPIResource):
         """
         carrier_token = urllib.parse.quote_plus(carrier_token)
         tracking_number = urllib.parse.quote_plus(tracking_number)
-        tn = urllib.parse.quote_plus(tracking_number)
         requestor = api_requestor.APIRequestor(api_key)
         url = cls.class_url() + carrier_token + '/' + tracking_number
         response, api_key = requestor.request('get', url)
@@ -641,17 +671,6 @@ class Batch(CreateableAPIResource, FetchableAPIResource):
     def class_url(cls):
         cls_name = cls.class_name()
         return "%ses/" % (cls_name,)
-
-
-class Order(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
-    """
-    Beta functionality, but useful for tracking a given order, label information, etc.
-    """
-
-    @classmethod
-    def class_url(cls):
-        cls_name = cls.class_name()
-        return "%ss/" % (cls_name,)
 
 
 class LineItem(ListableAPIResource, FetchableAPIResource):

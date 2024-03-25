@@ -121,6 +121,7 @@ The Shippo API provides in depth support of carrier and shipping functionalities
 
 - Shipping rates & labels - [Docs](https://goshippo.com/docs/first-shipment)
 - Shippo Invoices and Invoice Items
+- Shippo Address Book and Address Parsing
 - Tracking for any shipment with just the tracking number - [Docs](https://goshippo.com/docs/tracking)
 - Batch label generation - [Docs](https://goshippo.com/docs/batch)
 - Multi-piece shipments - [Docs](https://goshippo.com/docs/multipiece)
