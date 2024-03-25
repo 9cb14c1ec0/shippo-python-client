@@ -12,6 +12,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  'chardet',
+  'requests',
+  'simplejson'
+]
 
 [project.urls]
 Homepage = "https://github.com/9cb14c1ec0/shippo-python-client"
